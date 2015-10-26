@@ -1,0 +1,35 @@
+extend ../partials/init.part.jade
+
+block bodyBlock
+  include ../dashboard/topbar.part.jade
+  section#main
+    .container-fluid
+       include ../partials/flash.part.jade
+      .row-fluid
+        .span12
+          .login-container.center
+            .title.text-transparent Sign in
+            hr.main
+            form.login-form(method='post', action='/adminlogin')
+              input(type='hidden', name='_csrf', value='#{csrfToken}')
+              ul.fields-list
+                li
+                  i.icon-user(style='float: left;')
+                  input#username(type='text', autocomplete='off', name='email', placeholder='email')
+                li
+                  i.icon-key
+                  input#password(type='password', autocomplete='off', name='password', placeholder='password')
+              .actions
+                button.btn.btn-large.medium-blue.login-btn(type='submit')
+                  | Login
+                a.btn.btn-large.medium-blue.login-btn(href='/forgot')
+                  | Forgot password ?
+                a.btn.btn-large.medium-blue.login-btn(href='/register')
+                  | Go to Register
+              hr.main
+              .social-actions-title
+                | Access using these social accounts
+              hr.main
+              .social-actions
+                a.social-link.text-transparent(href='/auth/linkedin', rel='tooltip', data-placement='top', data-original-title='Linkedin Login')
+                  i.icon-linkedin

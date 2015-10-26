@@ -1,0 +1,583 @@
+/* Draggable events */
+/* line 6, fullcalendar/fullcalendar.css.scss */
+#draggable-events .event {
+  width: 100%;
+  padding: 3px 5px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+
+/* Fullcalendar */
+/* line 19, fullcalendar/fullcalendar.css.scss */
+.fc {
+  padding-top: 5px;
+  margin-top: 10px;
+  direction: ltr;
+  text-align: left;
+  border-right: 1px solid #D5D5D5;
+  border-top: 1px solid #D5D5D5; }
+
+/* line 28, fullcalendar/fullcalendar.css.scss */
+.fc table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 33, fullcalendar/fullcalendar.css.scss */
+html .fc, .fc table {
+  font-size: 1em; }
+
+/* line 35, fullcalendar/fullcalendar.css.scss */
+.fc td, .fc th {
+  padding: 0;
+  vertical-align: top; }
+
+/* line 39, fullcalendar/fullcalendar.css.scss */
+.fc-header {
+  position: relative;
+  width: 100%; }
+
+/* line 43, fullcalendar/fullcalendar.css.scss */
+.fc-header td {
+  white-space: nowrap; }
+
+/* line 46, fullcalendar/fullcalendar.css.scss */
+.fc-header-left {
+  width: 100%; }
+
+/* line 50, fullcalendar/fullcalendar.css.scss */
+.fc-header-center {
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80%; }
+
+/* line 57, fullcalendar/fullcalendar.css.scss */
+.panel-left .fc-header-right .fc-button:last-child .fc-button-inner {
+  border-right: 1px solid #D5D5D5; }
+
+/* line 61, fullcalendar/fullcalendar.css.scss */
+.fc-header-left .fc-button-inner {
+  border: medium none; }
+
+/* line 64, fullcalendar/fullcalendar.css.scss */
+.fc-header-right {
+  position: absolute !important;
+  right: 0;
+  top: -45px;
+  right: 10px; }
+
+/* line 72, fullcalendar/fullcalendar.css.scss */
+.panel-left .fc-header-right {
+  right: -1px; }
+
+/* line 75, fullcalendar/fullcalendar.css.scss */
+.fc-header-title {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1em; }
+
+/* line 81, fullcalendar/fullcalendar.css.scss */
+.fc-header-title strong {
+  display: block;
+  margin-top: 0;
+  padding: 8px 12px !important;
+  white-space: nowrap; }
+
+/* line 88, fullcalendar/fullcalendar.css.scss */
+.fc .fc-header-space {
+  padding-left: 10px; }
+
+/* line 91, fullcalendar/fullcalendar.css.scss */
+.fc-header .fc-button-next {
+  float: right; }
+
+/* line 95, fullcalendar/fullcalendar.css.scss */
+.fc-header .fc-corner-right {
+  margin-right: 1px; }
+
+/* line 98, fullcalendar/fullcalendar.css.scss */
+.fc-header .ui-corner-right {
+  margin-right: 0; }
+
+/* line 101, fullcalendar/fullcalendar.css.scss */
+.fc-header .fc-state-hover, .fc-header .ui-state-hover {
+  z-index: 2; }
+
+/* line 104, fullcalendar/fullcalendar.css.scss */
+.fc-header .fc-state-down {
+  z-index: 3; }
+
+/* line 107, fullcalendar/fullcalendar.css.scss */
+.fc-header .fc-state-active, .fc-header .ui-state-active {
+  z-index: 4; }
+
+/* line 110, fullcalendar/fullcalendar.css.scss */
+.fc-button-prev .fc-button-content {
+  width: 10px; }
+
+/* line 113, fullcalendar/fullcalendar.css.scss */
+.fc-button-next .fc-button-content {
+  width: 10px;
+  float: right;
+  margin-right: 20px; }
+
+/* line 119, fullcalendar/fullcalendar.css.scss */
+.fc-view {
+  overflow: hidden;
+  width: 100%; }
+
+/* line 123, fullcalendar/fullcalendar.css.scss */
+.fc-widget-header, .fc-widget-content {
+  border: 1px solid #D5D5D5; }
+
+/* line 126, fullcalendar/fullcalendar.css.scss */
+.fc-cell-overlay {
+  background: none repeat scroll 0 0 #99CCFF;
+  opacity: 0.2; }
+
+/* line 130, fullcalendar/fullcalendar.css.scss */
+.fc-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+
+/* line 135, fullcalendar/fullcalendar.css.scss */
+.fc-button-inner {
+  float: left;
+  overflow: hidden;
+  position: relative; }
+
+/* line 140, fullcalendar/fullcalendar.css.scss */
+.fc-button-content {
+  float: left;
+  height: 36px;
+  line-height: 37px;
+  padding: 0 14px;
+  position: relative;
+  white-space: nowrap; }
+
+/* line 148, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button-content {
+  height: 37px; }
+
+/* line 151, fullcalendar/fullcalendar.css.scss */
+.fc-button-content .fc-icon-wrap {
+  float: left;
+  position: relative;
+  top: 50%; }
+
+/* line 156, fullcalendar/fullcalendar.css.scss */
+.fc-button-content .ui-icon {
+  float: left;
+  margin-top: -50%;
+  position: relative; }
+
+/* line 161, fullcalendar/fullcalendar.css.scss */
+.fc-state-default .fc-button-effect {
+  left: 0;
+  position: absolute;
+  top: 50%; }
+
+/* line 166, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button {
+  margin-left: -1px; }
+
+/* line 169, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button:first-child .fc-button-content {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px; }
+
+/* line 173, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button:last-child .fc-button-content {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0; }
+
+/* line 177, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button-inner .fc-button-content {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: #eeeeee;
+  background: #d4d4d4;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q0ZDRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #d4d4d4));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #d4d4d4);
+  background-image: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
+  background-image: -o-linear-gradient(top, #eeeeee, #d4d4d4);
+  background-image: linear-gradient(top, #eeeeee, #d4d4d4);
+  background-size: 100%;
+  color: #333;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  border-color: #c8c8c8;
+  height: 25px;
+  line-height: 23px; }
+
+/* line 191, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button-inner .fc-button-content:hover {
+  background: #eeeeee;
+  background: #e1e1e1;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #e1e1e1));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #e1e1e1);
+  background-image: -moz-linear-gradient(top, #eeeeee, #e1e1e1);
+  background-image: -o-linear-gradient(top, #eeeeee, #e1e1e1);
+  background-image: linear-gradient(top, #eeeeee, #e1e1e1);
+  background-size: 100%; }
+
+/* line 197, fullcalendar/fullcalendar.css.scss */
+.fc-header-right .fc-button-inner .fc-button-content:active {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset; }
+
+/* line 202, fullcalendar/fullcalendar.css.scss */
+.fc-state-active .fc-button-inner .fc-button-content {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  color: #555;
+  text-shadow: inset 0 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  text-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.4); }
+
+/* line 209, fullcalendar/fullcalendar.css.scss */
+.fc-state-active .fc-button-inner .fc-button-content:hover {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 5px rgba(0, 0, 0, 0.1) inset; }
+
+/* line 214, fullcalendar/fullcalendar.css.scss */
+.fc-first th {
+  padding-top: 1px; }
+
+/* line 217, fullcalendar/fullcalendar.css.scss */
+.fc-state-disabled, .fc-state-disabled .fc-button-inner {
+  border-color: #DDDDDD;
+  color: #999999; }
+
+/* line 221, fullcalendar/fullcalendar.css.scss */
+.fc-state-disabled {
+  cursor: default; }
+
+/* line 224, fullcalendar/fullcalendar.css.scss */
+.fc-state-disabled .fc-button-effect {
+  display: none; }
+
+/* line 227, fullcalendar/fullcalendar.css.scss */
+.fc-event {
+  border-style: solid;
+  border-width: 0;
+  cursor: default;
+  font-size: 0.85em; }
+
+/* line 233, fullcalendar/fullcalendar.css.scss */
+a.fc-event, .fc-event-draggable {
+  cursor: pointer; }
+
+/* line 236, fullcalendar/fullcalendar.css.scss */
+a.fc-event {
+  text-decoration: none; }
+
+/* line 239, fullcalendar/fullcalendar.css.scss */
+.fc-rtl .fc-event {
+  text-align: right; }
+
+/* line 242, fullcalendar/fullcalendar.css.scss */
+.fc-event-skin {
+  background-color: #67a0be;
+  border: 1px solid #5595b6;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 11px;
+  margin-top: 1px;
+  padding: 1px 0; }
+
+/* line 252, fullcalendar/fullcalendar.css.scss */
+.fc-event-inner {
+  border-style: solid;
+  border-width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+/* line 260, fullcalendar/fullcalendar.css.scss */
+.fc-event-time, .fc-event-title {
+  display: block;
+  float: left;
+  line-height: 16px;
+  padding: 0 2px 1px 5px; }
+
+/* line 266, fullcalendar/fullcalendar.css.scss */
+.fc .ui-resizable-handle {
+  display: block;
+  font-size: 300%;
+  line-height: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99999; }
+
+/* line 274, fullcalendar/fullcalendar.css.scss */
+.fc-event-hori {
+  margin-bottom: 1px; }
+
+/* line 277, fullcalendar/fullcalendar.css.scss */
+.fc-event-hori .ui-resizable-e {
+  cursor: e-resize;
+  height: 100% !important;
+  right: -3px !important;
+  top: 0 !important;
+  width: 7px !important; }
+
+/* line 284, fullcalendar/fullcalendar.css.scss */
+.fc-event-hori .ui-resizable-w {
+  cursor: w-resize;
+  height: 100% !important;
+  left: -3px !important;
+  top: 0 !important;
+  width: 7px !important; }
+
+/* line 291, fullcalendar/fullcalendar.css.scss */
+.fc-corner-left {
+  margin-left: 1px; }
+
+/* line 294, fullcalendar/fullcalendar.css.scss */
+.fc-corner-right {
+  margin-right: 1px; }
+
+/* line 297, fullcalendar/fullcalendar.css.scss */
+.fc-corner-right .fc-button-inner, .fc-corner-right .fc-event-inner {
+  margin-right: -1px; }
+
+/* line 300, fullcalendar/fullcalendar.css.scss */
+.fc-corner-top {
+  margin-top: 1px; }
+
+/* line 303, fullcalendar/fullcalendar.css.scss */
+.fc-corner-top .fc-event-inner {
+  margin-top: -1px; }
+
+/* line 306, fullcalendar/fullcalendar.css.scss */
+.fc-corner-bottom {
+  margin-bottom: 1px; }
+
+/* line 309, fullcalendar/fullcalendar.css.scss */
+.fc-corner-bottom .fc-event-inner {
+  margin-bottom: -1px; }
+
+/* line 312, fullcalendar/fullcalendar.css.scss */
+.fc-corner-top .fc-event-inner {
+  border-top-width: 1px; }
+
+/* line 315, fullcalendar/fullcalendar.css.scss */
+.fc-corner-bottom .fc-event-inner {
+  border-bottom-width: 1px; }
+
+/* line 318, fullcalendar/fullcalendar.css.scss */
+table.fc-border-separate {
+  border-collapse: separate; }
+
+/* line 321, fullcalendar/fullcalendar.css.scss */
+.fc-border-separate th, .fc-border-separate td {
+  border-width: 1px 0 0 1px; }
+
+/* line 324, fullcalendar/fullcalendar.css.scss */
+.fc-border-separate td:first-child, .fc-border-separate th:first-child {
+  border-left: medium none; }
+
+/* line 327, fullcalendar/fullcalendar.css.scss */
+.fc-border-separate tr.fc-last th, .fc-border-separate tr.fc-last td {
+  border-top-width: 1px; }
+
+/* line 330, fullcalendar/fullcalendar.css.scss */
+.fc-border-separate tbody tr.fc-first td, .fc-border-separate tbody tr.fc-first th {
+  border-top-width: 1px; }
+
+/* line 333, fullcalendar/fullcalendar.css.scss */
+.fc-grid th {
+  text-align: center; }
+
+/* line 336, fullcalendar/fullcalendar.css.scss */
+.fc-grid .fc-day-number {
+  float: right;
+  padding: 3px 5px; }
+
+/* line 340, fullcalendar/fullcalendar.css.scss */
+.fc-grid .fc-other-month .fc-day-number {
+  opacity: 0.3; }
+
+/* line 343, fullcalendar/fullcalendar.css.scss */
+.fc-grid .fc-day-content {
+  clear: both;
+  padding: 5px 2px 3px; }
+
+/* line 329, fullcalendar.css.scss */
+/* line 348, fullcalendar/fullcalendar.css.scss */
+.fc-grid .fc-event-time {
+  font-weight: 600; }
+
+/* line 332, fullcalendar.css.scss */
+/* line 352, fullcalendar/fullcalendar.css.scss */
+.fc-rtl .fc-grid .fc-day-number {
+  float: left; }
+
+/* line 335, fullcalendar.css.scss */
+/* line 356, fullcalendar/fullcalendar.css.scss */
+.fc-rtl .fc-grid .fc-event-time {
+  float: right; }
+
+/* line 338, fullcalendar.css.scss */
+/* line 360, fullcalendar/fullcalendar.css.scss */
+.fc-agenda table {
+  border-collapse: separate; }
+
+/* line 341, fullcalendar.css.scss */
+/* line 364, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-days th {
+  text-align: center; }
+
+/* line 344, fullcalendar.css.scss */
+/* line 368, fullcalendar/fullcalendar.css.scss */
+.fc-agenda .fc-agenda-axis {
+  font-weight: normal;
+  padding: 0 4px;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50px; }
+
+/* line 352, fullcalendar.css.scss */
+/* line 377, fullcalendar/fullcalendar.css.scss */
+.fc-agenda .fc-day-content {
+  padding: 2px 2px 1px; }
+
+/* line 355, fullcalendar.css.scss */
+/* line 381, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-days .fc-agenda-axis {
+  border-right-width: 1px; }
+
+/* line 358, fullcalendar.css.scss */
+/* line 385, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-days .fc-col0 {
+  border-left-width: 0; }
+
+/* line 361, fullcalendar.css.scss */
+/* line 389, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-allday th {
+  border-width: 0 1px; }
+
+/* line 364, fullcalendar.css.scss */
+/* line 393, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-allday .fc-day-content {
+  min-height: 34px; }
+
+/* line 367, fullcalendar.css.scss */
+/* line 397, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-divider-inner {
+  height: 2px;
+  overflow: hidden; }
+
+/* line 371, fullcalendar.css.scss */
+/* line 402, fullcalendar/fullcalendar.css.scss */
+.fc-widget-header .fc-agenda-divider-inner {
+  background: none repeat scroll 0 0 #EEEEEE; }
+
+/* line 374, fullcalendar.css.scss */
+/* line 406, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-slots th {
+  border-width: 1px 1px 0; }
+
+/* line 377, fullcalendar.css.scss */
+/* line 410, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-slots td {
+  background: none repeat scroll 0 0 transparent;
+  border-width: 1px 0 0; }
+
+/* line 381, fullcalendar.css.scss */
+/* line 415, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-slots td div {
+  height: 20px; }
+
+/* line 384, fullcalendar.css.scss */
+/* line 419, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-slots tr.fc-slot0 th, .fc-agenda-slots tr.fc-slot0 td {
+  border-top-width: 0; }
+
+/* line 387, fullcalendar.css.scss */
+/* line 423, fullcalendar/fullcalendar.css.scss */
+.fc-agenda-slots tr.fc-minor th, .fc-agenda-slots tr.fc-minor td {
+  border-top-style: dotted; }
+
+/* line 392, fullcalendar.css.scss */
+/* line 427, fullcalendar/fullcalendar.css.scss */
+.fc-event-vert {
+  border-width: 0 1px; }
+
+/* line 395, fullcalendar.css.scss */
+/* line 431, fullcalendar/fullcalendar.css.scss */
+.fc-event-vert .fc-event-head, .fc-event-vert .fc-event-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 2; }
+
+/* line 401, fullcalendar.css.scss */
+/* line 438, fullcalendar/fullcalendar.css.scss */
+.fc-event-vert .fc-event-time {
+  font-size: 10px;
+  white-space: nowrap; }
+
+/* line 405, fullcalendar.css.scss */
+/* line 443, fullcalendar/fullcalendar.css.scss */
+.fc-event-vert .fc-event-bg {
+  background: none repeat scroll 0 0 #FFFFFF;
+  height: 100%;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+/* line 417, fullcalendar.css.scss */
+/* line 454, fullcalendar/fullcalendar.css.scss */
+.fc-event-vert .ui-resizable-s {
+  bottom: 0 !important;
+  cursor: s-resize;
+  font-family: monospace;
+  font-size: 11px !important;
+  height: 8px !important;
+  line-height: 8px !important;
+  overflow: hidden !important;
+  text-align: center;
+  width: 100% !important; }
+
+/* line 431, fullcalendar.css.scss */
+/* line 466, fullcalendar/fullcalendar.css.scss */
+#external-events .external-event {
+  margin-bottom: 5px; }

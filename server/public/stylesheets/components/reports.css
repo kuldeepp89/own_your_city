@@ -1,0 +1,83 @@
+/* piety lines, bars, pies */
+/* line 6, components/reports.css.scss */
+span.line canvas, span.bar canvas, span.pie canvas {
+  width: 60px;
+  height: 20px; }
+
+/* audience list on dashboard */
+/* line 13, components/reports.css.scss */
+ul.audience {
+  list-style: none;
+  overflow: auto; }
+  /* line 17, components/reports.css.scss */
+  ul.audience li {
+    width: 100%;
+    line-height: 54px;
+    overflow: inherit;
+    border-bottom: 1px dotted #eeeeee;
+    font-weight: 600; }
+    /* line 24, components/reports.css.scss */
+    ul.audience li .stat-name {
+      margin-left: 10px; }
+    /* line 26, components/reports.css.scss */
+    ul.audience li .value {
+      float: left;
+      color: #555;
+      font-size: 1.8em;
+      width: 28%; }
+    /* line 33, components/reports.css.scss */
+    ul.audience li .indicator {
+      float: left;
+      width: 70%; }
+
+/* audience-alt list on dashboard */
+/* line 42, components/reports.css.scss */
+ul.audience-alt {
+  list-style: none;
+  overflow: hidden; }
+  /* line 46, components/reports.css.scss */
+  ul.audience-alt li {
+    width: 100%;
+    overflow: inherit;
+    padding-top: 5px;
+    border-bottom: 1px dotted #eeeeee;
+    font-weight: 600; }
+    /* line 54, components/reports.css.scss */
+    ul.audience-alt li .icon {
+      float: left;
+      display: inline-block;
+      margin-bottom: 5px; }
+    /* line 60, components/reports.css.scss */
+    ul.audience-alt li .stat-name {
+      float: left;
+      margin-left: 8px;
+      margin-top: 5px;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.5);
+      line-height: 50px;
+      text-transform: uppercase;
+      vertical-align: text-bottom; }
+    /* line 72, components/reports.css.scss */
+    ul.audience-alt li .value {
+      float: left;
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 2.5em;
+      line-height: 50px;
+      color: rgba(0, 0, 0, 0.4);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+    /* line 83, components/reports.css.scss */
+    ul.audience-alt li .progress-bar {
+      width: 30%;
+      float: right;
+      margin-right: 10px;
+      padding-top: 25px; }
+    /* line 90, components/reports.css.scss */
+    ul.audience-alt li .percent {
+      float: right;
+      margin-top: 5px;
+      display: inline-block;
+      color: #67a0be;
+      line-height: 50px;
+      text-transform: uppercase;
+      vertical-align: text-bottom; }

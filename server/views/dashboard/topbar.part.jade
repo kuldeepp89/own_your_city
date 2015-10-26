@@ -1,0 +1,71 @@
+#navigation.navbar-fixed-top
+  .container
+    .row-fluid
+      .span12.center
+        // LOGO
+        a.brand.pull-left(href='/home')
+          img(src='/public/images/logo.fw.png', alt='OwnYourCity')
+        // END LOGO
+        // MOBILE MENU BUTTON
+        .mobile-menu(data-toggle='collapse', data-target='.nav-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        // END MOBILE MENU BUTTON
+        // MAIN MENU
+        ul#main-menue
+          li
+            a(href='/home' style = 'color: #292929') Home
+          li
+            a(href='/dashboard/profile/edit' style = 'color: #292929') Profile
+          if isAdmin
+            li
+              a(href='/dashboard' style = 'color: #292929') Upload House
+          else
+            li 
+              a(href = '/dashboard' style = 'color: #292929') Dashboard
+          li
+            .demo
+              .menu#find-property
+                a.hover-link(style = 'color: #292929') Find Property
+                if isAdmin
+                  .sub
+                    ul.sub-options
+                      li
+                        a(href='/adminhouse/newyork/0') Newyork
+                      li
+                        a(href='/adminhouse/boston/0') Boston
+                      li
+                        a(href='/adminhouse/philadelphia/0') Philadelphia
+                      li
+                        a(href='/adminhouse/washington/0') Washington   
+                else
+                  .sub
+                    ul.sub-options
+                      li
+                        a(href='/house/newyork/0') Newyork
+                      li
+                        a(href='/house/boston/0') Boston
+                      li
+                        a(href='/house/philadelphia/0') Philadelphia
+                      li
+                        a(href='/house/washington/0') Washington   
+            li
+              a(href='https://www.dwolla.com/Register', style = 'color: #292929; margin-left: -60px; z-index: 1000', target = 'blank') Dwolla       
+        // END MAIN MENU
+        // SOCIAL ICONS
+        .social-icons.hover-big.pull-right(style = 'padding-right: 20px')
+          a.sicon-facebook(href='#')
+            i Facebook
+          a.sicon-twitter(href='#')
+            i Twitter
+          a.sicon-linkedin(href='#')
+            i LinkedIn
+          a.sicon-youtube(href='#')
+            i Youtube
+          a.sicon-pinterest(href='#')
+            i Pinterest
+        ul#main-menue
+          li
+            a(href='/logout' style = 'left: 320px; color: #292929') Logout
+    // END SOCIAL ICONS

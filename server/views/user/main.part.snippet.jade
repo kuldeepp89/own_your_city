@@ -1,0 +1,35 @@
+li.comment-box
+  .row-fluid
+    a(href='/gethouse/#{bidHouses[j][i][0]._id}' style='color: gray')
+      .span3        
+        img.avatar(src='#{bidHouses[j][i][0].images.otherImage[0]}')
+        if(j === 0)
+         div(style = 'height: 5px; width: 80px; background-color: green; margin-left: 10px; margin-right: 10px')
+        else if(j === 1)
+         div(style = 'height: 5px; width: 80px; background-color: red; margin-left: 10px; margin-right: 10px')
+        else
+         div(style = 'height: 5px; width: 80px; background-color: black; margin-left: 10px; margin-right: 10px')
+      .span9
+        .row-fluid
+          .span6
+            strong City: 
+            | #{bidHouses[j][i][0].city}
+          .span6
+            strong Neighborhood:  
+            | #{bidHouses[j][i][0].neighbourHood}
+        .row-fluid
+          .span12
+            strong Short Description:  
+            | #{bidHouses[j][i][0].description}
+        .row-fluid
+          .span6
+            strong Percentage Funded: 
+            | #{bidHouses[j][i][2]}%
+          .span6
+            strong You Own:   
+            | #{bidHouses[j][i][1]} Shares
+    if(j === 1)
+       .row-fluid
+         .span6
+           .btn.offset3
+             | Download Form

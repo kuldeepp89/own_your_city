@@ -1,0 +1,21 @@
+nav#primary.main-nav.collapsible-nav
+      // Brand
+      a#sidebar-brand(href='../pages/dashboard.html')
+        | OwnYourCity
+      button.btn.btn-navbar.btn-inverse.collapsed(type='button', data-toggle='collapse', data-target='.nav-collapse')
+        i.icon-reorder
+      ul.nav-collapse.collapse(style='height: 0px;')
+        // Profile
+        li.profile
+          a.accordion-toggle(href = '/dashboard/profile/edit')
+            img.avatar(src = '#{user.profile.picture}')
+            span#profile-text.text
+              | #{user.profile.name}
+        li
+          a.accordion-toggle(href = '/user/list')
+            | User List
+        li
+          a.accordion-toggle(href = '/activity/summary')
+            | Activity Summary
+        // Dashboard
+        

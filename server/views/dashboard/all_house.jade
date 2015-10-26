@@ -1,0 +1,182 @@
+extends ../partials/init.part
+block bodyBlock
+  if isAdmin
+    include ../admin/navigation.part.jade
+  else
+    include ../user/navigation.part.jade
+  include ./topbar.part.jade
+  - var length = houses.length
+  mixin showRow(i)
+    if(i%4 == 0 && i < length)
+      .row-fluid
+        .house-list-box
+          +showBlock(houses[i][0], houses[i][1], houses[i][2],i+1)
+    else if(i < length)
+      +showBlock(houses[i][0], houses[i][1], houses[i][2], i+1)
+
+  mixin showBlock(house, remainTime, pf, i)
+    if(remainTime < 0 || pf==100)
+      a(href='/gethouse/#{house._id}')
+        .span3(style = 'float: left;margin-left: 1.7em;color: black')
+          .box.bordered
+            input(type = 'hidden', id = 'hiddenAddress', value = '#{house.address}')
+            .overlay-container
+              img(src= '#{house.images.otherImage[0]}', style = "height: 100%;width: 100%")
+            .list-address(style = 'height: 51px') 
+              |#{house.houseNumber} #{house.streetNumber} pin code #{house.pinCode}
+            .house
+              h5.house-type
+                | #{house.typeOfHouse.title}
+              p.house-detail
+                | #{house.description}
+            .shares
+              p.shares-type
+                | #{house.numberOfShare} Shares
+              p.shares-detail
+                | #{pf}% funded
+            .shares
+              h4
+                | $#{house.costOfShare} Per Share
+            .bidonoff
+              button.btn.btn-small.red
+                | Bidding OFF
+    else
+      a(href='/gethouse/#{house._id}')
+        .span3(style = 'float: left;margin-left: 1.7em;color: black')
+          .box.bordered
+            .overlay-container
+              img(src= '#{house.images.otherImage[0]}', style = "width: 100%")
+            .list-address(style = 'height: 51px') 
+              |#{house.houseNumber} #{house.streetNumber} pin code #{house.pinCode}
+            .house
+              h5.house-type
+                | #{house.typeOfHouse.title}
+              p.house-detail
+                | #{house.description}
+            .shares
+              p.shares-type
+                | #{house.numberOfShare} Shares
+              p.shares-detail
+                | #{pf}% funded
+            .shares
+              h4
+                | $#{house.costOfShare} Per Share
+            .bidonoff
+              button.btn.btn-small.green(class='getting-started_#{i}')
+                | Bidding ON:
+                if(remainTime == 0)
+                  | Last Day
+                else
+                  | #{remainTime} Days Left
+        script.
+          var date = "#{house.biddingEndDate}"          
+          function countDown(date){
+            var dateWidTime = date.split('-');
+            var od = new Date(dateWidTime[0]);
+            var delay = od.getFullYear()+'/'+(parseInt(od.getMonth()+ 1))+'/'+(od.getDate());
+            $('.getting-started_#{i}').countdown(delay+' '+dateWidTime[1])
+              .on('update.countdown', function(event) {                
+                  var format = '%H:%M';
+                  if(event.offset.totalDays > 1) {
+                    format = '%-w week%!w %-d day%!d ' ;
+                    $(this).html('Bid On: '+ event.offset.totalDays +' days left');
+                  }
+                  else {                      
+                    $(this).html('Bid On: ' +event.strftime(format) + ' hours left');                      
+                  }                   
+              }).on('finish.countdown', function(event) {
+                $(this).parent()
+                  .addClass('disabled')
+                  .html('<button class="btn btn-small red">This offer has expired!</strong>');
+              });
+            $('#bidDate').html(moment(new Date(od[1]+'-'+od[0]+'-'+od[2])).format("MMMM Do YYYY"));
+          }
+          countDown(date)      
+    +showRow(i)
+  block mainBlock
+    section#main
+      .container-fluid
+        .row-fluid
+          .padded
+          .row-fluid
+          .span12
+            if messages.errors
+              .alert.alert-danger.animated.fadeIn
+                for error in messages.errors
+                  div= error.msg
+            if messages.info
+              .alert.alert-info.animated.fadeIn
+                for info in messages.info
+                  div= info.msg
+            if messages.success
+              .alert.alert-success.animated.fadeIn
+                for success in messages.success
+                  div= success.msg
+            .alert-success
+          .pageHeadingTitle
+            .box-header
+              i.icon-home
+                | #{title}
+        .row-fluid
+          .heading
+            .span4.offset1
+            .light-theme
+              input#currentPage(type = 'hidden', value = '#{page}')
+              input#numberOfPages(type = 'hidden', value = '#{numberOfPages}')
+              input#city(type = 'hidden', value = '#{city}')
+              if(numberOfPages > 1)
+                if isAdmin
+                  if(page === 1)
+                    a.page-link(href ='') «
+                  else
+                    a.page-link(href='/adminhouse/#{city}/#{(page-2)}') «
+                  a.page-link(href='/adminhouse/#{city}/#{(0)}', class = '1') 1
+                  a.page-link(class = 'dot') …
+                  - var j = 1
+                  - for(var i = 1; i< numberOfPages; i++)
+                    a.page-link(href='/adminhouse/#{city}/#{(j)}', class = '#{(i+1)}')
+                      - j = j+1
+                      | #{(j)}
+                  if(page === numberOfPages)
+                    a.page-link(href= '') »
+                  else
+                    a.page-link.next() »
+                else
+                  if(page === 1)
+                    a.page-link(href ='') «
+                  else
+                    a.page-link(href='/house/#{city}/#{(page-2)}') «
+                  a.page-link(href='/house/#{city}/#{(0)}', class = '1') 1
+                  a.page-link(class = 'dot') …
+                  - var j = 1
+                  - for(var i = 1; i< numberOfPages; i++)
+                    a.page-link(href='/house/#{city}/#{(j)}', class = '#{(i+1)}')
+                      - j = j+1
+                      | #{(j)}
+                  if(page === numberOfPages)
+                    a.page-link(href= '') »
+                  else
+                    a.page-link.next() »
+        .row-fluid#arrange
+          +showRow(0)
+        .row-fluid
+          .heading
+            .span4.offset1
+            .light-theme
+              if(numberOfPages > 1)
+                if(page === 1)
+                  a.page-link(href ='') «
+                else
+                  a.page-link(href='/house/#{city}/#{(page-2)}') «
+                a.page-link(href='/house/#{city}/#{(0)}', class = '1') 1
+                a.page-link(class = 'dot') …
+                - var j = 1
+                - for(var i = 1; i< numberOfPages; i++)
+                  a.page-link(href='/house/#{city}/#{(j)}', class = '#{(i+1)}')
+                    - j = j+1
+                    | #{(j)}
+                if(page === numberOfPages)
+                  a.page-link(href= '') »
+                else
+                  a.page-link.next() »
+  script(src='/public/javascripts/image-uploader.js', type='text/javascript')

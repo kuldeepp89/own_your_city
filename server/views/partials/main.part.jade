@@ -1,0 +1,499 @@
+section#main
+  .row-fluid
+    .span12
+      hr.main
+      ul.breadcrumbs
+        li
+          a.crumb(href='#') Some
+          span.divider &sol;
+        li
+          a.crumb(href='#') Pretty
+          span.divider &sol;
+        li
+          a.crumb(href='#') Cool
+          span.divider &sol;
+        li
+          a.crumb.active(href='#') Crumbs
+      hr.main
+  .container-fluid
+    .row-fluid
+      .span12
+        .box.bordered
+          .box.inner.light-gray
+            .row-fluid.padded10
+              .span2.center
+                .stat-box.medium-blue
+                  i.icon-group.icon-large
+                  span.count 134
+                  span.stat-text Users
+              .span2.center
+                .stat-box.dark-blue
+                  i.icon-bell.icon-large
+                  span.count 23
+                  span.stat-text Events
+              .span2.center
+                .stat-box.border-blue
+                  i.icon-umbrella.icon-large
+                  span.count 220
+                  span.stat-text Requests
+              .span2.center
+                .stat-box.text-blue
+                  i.icon-hand-right.icon-large
+                  span.count 204
+                  span.stat-text Orders
+              .span2.center
+                .stat-box.dark-blue
+                  i.icon-envelope.icon-large
+                  span.count 32
+                  span.stat-text Messages
+              .span2.center
+                .stat-box.medium-blue
+                  i.icon-comments-alt.icon-large
+                  span.count 65
+                  span.stat-text Comments
+          .row-fluid
+            .span7
+              .padded
+                .section-title Audience overview
+                #site-visits.chart(style='width: 100%; height: 330px;')
+            .span5
+              .padded
+                .section-title Traffic type
+                #traffic-type-chart.chart(style='width: 100%; height: 300px;')
+          .row-fluid
+            .span6
+              .padded
+                .section-title Visits
+                ul.audience-alt
+                  li
+                    .icon
+                      .big-label.medium-blue.text-inverse
+                        i.icon-lightbulb
+                    .value 504
+                    .stat-name Visitors
+                    .percent &lpar;&plus;30&percnt;&rpar;
+                    .progress-bar.audience-progress
+                      .progress.progress-medium-blue
+                        .bar(style='width: 30%')
+                  li
+                    .icon
+                      .big-label.dark-blue.text-inverse
+                        i.icon-star
+                    .value 439
+                    .stat-name Visits
+                    .percent &lpar;&plus;61&percnt;&rpar;
+                    .progress-bar.audience-progress
+                      .progress.progress-dark-blue
+                        .bar(style='width: 61%')
+                  li
+                    .icon
+                      .big-label.light-blue
+                        i.icon-eye-open
+                    .value 988
+                    .stat-name Page views
+                    .percent &lpar;&plus;44&percnt;&rpar;
+                    .progress-bar.audience-progress
+                      .progress.progress-light-blue
+                        .bar(style='width: 44%')
+                  li
+                    .icon
+                      .big-label.dark-plum.text-inverse
+                        i.icon-heart
+                    .value 39
+                    .stat-name Likes
+                    .percent &lpar;&plus;12&percnt;&rpar;
+                    .progress-bar.audience-progress
+                      .progress.progress-dark-plum
+                        .bar(style='width: 12%')
+                  li
+                    .icon
+                      .big-label.text-blue.text-inverse
+                        i.icon-comment
+                    .value 18
+                    .stat-name Comments
+                    .percent &lpar;&plus;78&percnt;&rpar;
+                    .progress-bar.audience-progress
+                      .progress.progress-text-blue
+                        .bar(style='width: 78%')
+            .span6
+              .padded
+                .section-title Countries
+                table.table
+                  thead
+                    tr
+                      th &lpar;check&rpar;
+                      th Country
+                      th Visits
+                      th Pageviews
+                  tbody
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Sweden.png')
+                        | Sweden
+                      td 3845
+                      td 5&period;55
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Romania.png')
+                        | Romania
+                      td 2887
+                      td 4&period;29
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Italy.png')
+                        | Italy
+                      td 2411
+                      td 4&period;11
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Germany.png')
+                        | Germany
+                      td 1996
+                      td 3&period;69
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Spain.png')
+                        | Spain
+                      td 1685
+                      td 3&period;08
+                    tr
+                      td
+                        label.checkbox
+                          input(type='checkbox', value='')
+                      td(style='line-height: 24px;')
+                        span.flag
+                          img(src='images/flags/Finland.png')
+                        | Finland
+                      td 1054
+                      td 2&period;88
+                  tfoot
+                    tr
+                      td(colspan='6')
+                        .pagination.blue-pag.light-theme.blue-theme.pull-right
+                          ul
+                            li
+                              a(href='#') &laquo;
+                            li
+                              a(href='#') 1
+                            li.active
+                              a(href='#') 2
+                            li.disabled
+                              a(href='#') &period;&period;&period;
+                            li
+                              a(href='#') 9
+                            li
+                              a(href='#') &raquo;
+        .row-fluid
+          .span6
+            .box.bordered
+              .box-header
+                i.icon-link
+                | Quick links
+              .row-fluid
+                .span12
+                  .padded
+                    button.big-button(href='#')
+                      i.icon-cogs.icon-large
+                      span.button-text Users
+                    button.big-button.active(href='#')
+                      i.icon-group.icon-large
+                      span.button-text Requests
+                    button.big-button(href='#')
+                      i.icon-envelope.icon-large
+                      span.button-text Messages
+                    button.big-button(href='#')
+                      i.icon-comments.icon-large
+                      span.button-text Comments
+                    button.big-button(href='#')
+                      i.icon-flag.icon-large
+                      span.button-text Events
+                    button.big-button(href='#')
+                      i.icon-bar-chart.icon-large
+                      span.button-text Orders
+            .box.transparent
+              .padded
+                blockquote.blockquote-medium-blue
+                  p
+                    | Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit&period; Vivamus magna&period; Cras in mi at felis aliquet congue&period;
+                    | Ut a est eget ligula molestie gravida&period;
+          .span6
+            .box.bordered
+              .box-header
+                i.icon-tags
+                | Todos
+                .pull-right
+                  .btn-group
+                    a.dropdown-toggle(data-toggle='dropdown')
+                      i.icon-cog
+                    ul.dropdown-menu.dropdown-left
+                      li
+                        a Delete all
+                      li
+                        a Mark all as complete
+                      li.divider
+                      li
+                        a Refresh
+              ul.task-list
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some important task
+                  .priority
+                    span.label.red important
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some normal priority task
+                  .priority
+                    span.label.medium-blue normal
+                li.task-box.completed
+                  .check
+                    i.icon-check
+                  .task Some completed task
+                  .priority
+                    span.label.inverse completed
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some high priority task
+                  .priority
+                    span.label.orange high
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some normal priority task
+                  .priority
+                    span.label.medium-blue normal
+                li.task-box
+                  .check
+                    i.icon-check
+                  .task Some low priority task
+                  .priority
+                    span.label.green low
+                li.task-box.completed
+                  .check
+                    i.icon-check
+                  .task Some completed task
+                  .priority
+                    span.label.inverse completed
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some high priority task
+                  .priority
+                    span.label.orange high
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some normal priority task
+                  .priority
+                    span.label.medium-blue normal
+                li.task-box
+                  .check
+                    i.icon-check-empty
+                  .task Some low priority task
+                  .priority
+                    span.label.green low
+                li.view-all(style='text-align: center')
+                  a(href='#') View all
+        .row-fluid
+          .span7
+            .box.bordered
+              .box-header
+                i.icon-comments
+                | Recent comments
+                .pull-right
+                  .btn-group
+                    a.dropdown-toggle(data-toggle='dropdown')
+                      i.icon-wrench
+                    ul.dropdown-menu.dropdown-left
+                      li
+                        a Approve all
+                      li
+                        a Delete all
+              .padded10
+                ul.recent-comments
+                  li.comment-box
+                    .avatar.user2.pull-left
+                    .article
+                      .post-info  Mike&comma; 24 minutes ago
+                      .post-content-preview
+                        | Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s&period;&period;&period;
+                      .article-actions
+                        button.btn.btn-mini.light-blue.inverse Edit
+                        button.btn.btn-mini.medium-blue Approve
+                        button.btn.btn-mini.dark-blue Delete
+                  li.comment-box
+                    .avatar.user5.pull-left
+                    .article
+                      .post-info  Maria&comma; 2 days ago
+                      .post-content-preview
+                        | Contrary to popular belief&comma; Lorem Ipsum is not simply random text&period;&period;&period;
+                      .article-actions
+                        button.btn.btn-mini.light-blue.inverse Edit
+                        button.btn.btn-mini.medium-blue Approve
+                        button.btn.btn-mini.dark-blue Delete
+                  li.comment-box
+                    .avatar.user7.pull-left
+                    .article
+                      .post-info  Jordan&comma; 2 days ago
+                      .post-content-preview
+                        | Lorem Ipsum comes from sections 1&period;10&period;32 and 1&period;10&period;33 of &quot;de Finibus Bonorum et Malorum&quot;&period;&period;&period;
+                      .article-actions
+                        button.btn.btn-mini.light-blue.inverse Edit
+                        button.btn.btn-mini.medium-blue Approve
+                        button.btn.btn-mini.dark-blue Delete
+                  li.comment-box
+                    .avatar.user3.pull-left
+                    .article
+                      .post-info  Helen&comma; 3 days ago
+                      .post-content-preview
+                        | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested&period;&period;&period;
+                      .article-actions
+                        button.btn.btn-mini.light-blue.inverse Edit
+                        button.btn.btn-mini.medium-blue Approve
+                        button.btn.btn-mini.dark-blue Delete
+                  li.comment-box.view-more(style='text-align: center')
+                    a(href='#') View more
+          .span5
+            .box.bordered
+              .box-header
+                i.icon-tags
+                | User activity
+                .pull-right
+                  .btn-group
+                    a.dropdown-toggle(data-toggle='dropdown')
+                      i.icon-cog
+                    ul.dropdown-menu.dropdown-left
+                      li
+                        a Dismiss all
+                      li.divider
+                      li
+                        a Refresh
+              ul.recent-activity
+                li.event-box
+                  .user-avatar.user2.pull-left
+                  .event
+                    .action
+                      a.username(href='#') John Doe
+                      | has invited you to join
+                      span.label.medium-blue Ruby Group
+                      | &period;
+                    .time
+                      i.icon-time
+                      | 24 minutes ago
+                li.event-box
+                  .user-avatar.user3.pull-left
+                  .event
+                    .action
+                      a.username(href='#') Mary Ann Doe
+                      | has liked your post
+                      span.label.dark-plum CSS3 stylish shadows
+                      | &period;
+                    .time
+                      i.icon-time
+                      | 15 hours ago
+                li.event-box
+                  .user-avatar.user7.pull-left
+                  .event
+                    .action
+                      a.username(href='#') Jeremy Dust
+                      | has invited you to the event
+                      span.label.dark-blue First workshop
+                      | &period;
+                    .time
+                      i.icon-time
+                      | 20 hours ago
+                li.event-box
+                  .user-avatar.user1.pull-left
+                  .event
+                    .action
+                      a.username(href='#') John Doe
+                      | commented on your post
+                      span.label.medium-blue Working out
+                      | &period;
+                    .time
+                      i.icon-time
+                      | 21 hours ago
+                li.event-box
+                  .user-avatar.user4.pull-left
+                  .event
+                    .action
+                      a.username(href='#') Lorena Mayer
+                      | created a new post&colon;
+                      span.label.medium-blue On Compass and SCSS
+                      | &period;
+                    .time
+                      i.icon-time
+                      | 1 day ago
+                li.event-box
+                  .user-avatar.user5.pull-left
+                  .event
+                    .action
+                      a.username(href='#') Mary Jones
+                      | accepted your friend request&period;
+                    .time
+                      i.icon-time
+                      | 3 days ago
+                li.event-box
+                  .user-avatar.user7.pull-left
+                  .event
+                    .action
+                      a.username(href='#') Jeremy Dust
+                      | accepted your friend request&period;
+                    .time
+                      i.icon-time
+                      | 3 days ago
+                li.event-box.view-more(style='text-align: center')
+                  a(href='#') View more
+        .row-fluid
+          .span12
+            .box.bordered
+              .box-header
+                i.icon-calendar
+                span#calendar-title Calendar
+              .row-fluid
+                .span8
+                  #calendar.calendar
+                #draggable-events.span4.padded
+                  h5 Draggable events
+                  div
+                    .event.medium-gray.ui-draggable(style='position: relative; z-index: auto; left: 0px; top: 0px; ') Special event
+                    .event.light-blue.ui-draggable(style='position: relative; ') Completed event
+                    .event.medium-blue.ui-draggable(style='position: relative; ') Normal event
+                    .event.dark-blue.ui-draggable(style='position: relative; ') Important event
+                    .event.dark-plum.ui-draggable(style='position: relative; ') Info event
+                    .event.dark-gray.ui-draggable(style='position: relative; ') Other
+                    p
+                      label(for='drop-remove')
+                        #uniform-drop-remove.checker
+                          span
+                            input#drop-remove(type='checkbox', style='opacity: 0; ')
+                        | Remove event after drop
+  .container-fluid
+    .row-fluid
+      .span12
+        .box.footer
+          .copyright.text-transparent.center
+            div 2013 &copy; Whitemin Template
+            div Created by Adritha84

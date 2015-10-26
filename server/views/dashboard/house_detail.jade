@@ -1,0 +1,14 @@
+extends ../partials/init.part
+
+block bodyBlock
+  .mother
+    if isAdmin
+      include ../admin/navigation.part.jade
+      include ./topbar.part.jade
+    else
+      include ../user/navigation.part.jade
+      include ./topbar.part.jade
+    block mainBlock
+      include ./house.detail.part.jade
+    include ../dashboard/modal.part.jade
+    script(src='/public/javascripts/image-uploader.js', type='text/javascript')

@@ -1,0 +1,24 @@
+nav#primary.main-nav.collapsible-nav
+  // Brand
+  a#sidebar-brand(href='../pages/dashboard.html')
+    | OwnYourCity
+  button.btn.btn-navbar.btn-inverse.collapsed(data-target='.nav-collapse', data-toggle='collapse', type='button')
+    i.icon-reorder
+  ul.nav-collapse.collapse(style='height: 0px;')
+    // Profile
+    li.profile
+      a.accordion-toggle(href='/dashboard/profile/edit')
+        img.avatar(src = '#{user.profile.picture}')
+        span#profile-text.text
+          | #{user.profile.name}
+    li.profile.text
+      a.padded(style = 'text-align: center')
+        | Money Invested:  $#{sidebar[0]}
+    li.profile.text
+      a(style = 'text-align: center')
+        | Bids in Progress:  #{sidebar[1]}
+    li.profile.text
+      a(style = 'text-align: center')
+        | Property You Own:  #{sidebar[2]}
+    // Dashboard
+    

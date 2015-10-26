@@ -1,0 +1,92 @@
+extend ../partials/init.part.jade
+
+block bodyBlock
+  
+  include navigation.part.jade
+  include ../dashboard/topbar.part.jade
+  block mainBlock
+    section#main
+      .container-fluid
+        .row-fluid
+          .pageHeadingTitle
+            .box-header
+              i.icon-picture
+              | Dashboard
+          .box.bordered            
+            .row-fluid
+              .span12
+                .box-header
+                  i.icon-th-list
+                    | Activity Summary
+            .row-fluid(style= 'font-size: 17px')
+              .span12(style = 'margin-left: 25px')
+                | How many properties have been sold: #{pCounts}
+              .span12
+                | What is the total amount of investment: $#{totalAmount}
+              .span12
+                | What is the total number of users: #{uCounts}
+              .span12
+                | What is the total number of transactions: #{bCounts}
+              .span12
+                | Total number of users who have actually completed transactions: #{tCounts}
+          
+      .container-fluid
+        .row-fluid
+          .span-12
+            .span6
+              .box.bordered
+                .padded
+                  .box-header
+                    i.icon-th-list
+                      | Activity chart
+                  .padded
+                    .row-fluid
+                      .span12
+                        #interactive-chart.chart(style='width: 100%; height: 300px;')
+            .span6
+              .box.bordered
+                .padded
+                  .row-fluid
+                    .span12
+                      .box-header
+                        i.icon-th-list
+                          | Today's Activity
+                  .row-fluid
+                    .span12
+                      input(type = 'hidden', value = '#{transactions[0]}', id= 'today0')
+                      input(type = 'hidden', value = '#{transactions[1]}', id= 'today1')
+                      input(type = 'hidden', value = '#{transactions[2]}', id= 'today2')
+                      input(type = 'hidden', value = '#{transactions[3]}', id= 'today3')
+                      input(type = 'hidden', value = '#{transactions[4]}', id= 'today4')
+                      .scroll(style='height:350px; overflow-x:hidden;overflow-y:scroll; color: gray')
+                        .row-fluid
+                          b
+                            .span4
+                              | Money Invested: $#{todayAmount}
+                            .span5
+                              | Number of Transaction: #{todayTransaction}  
+                            .span3
+                              | Active Houses: #{activeHouse}
+                        ul.recent-comments
+                          for house in houses
+                            a(href='/gethouse/#{house._id}', style = 'color: gray' )
+                              li.comment-box
+                                .row-fluid
+                                  .span3
+                                    .avatar
+                                      img(src= '#{house.images.otherImage}' style = 'height: 100%; width: 100%')
+                                  .span9
+                                    .row-fluid
+                                      .span6
+                                        strong City: #{house.city}
+                                      .span6
+                                        strong Neighbourhood: #{house.neighbourHood}
+                                    .row-fluid
+                                      .span12
+                                        strong % Funded: 
+                                          | #{pFunded[0]}
+                          
+                                    
+
+    script(src='/public/javascripts/image-uploader.js', type='text/javascript')
+

@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+  /* line 4, responsive-max768.css.scss */
+  body {
+    overflow-y: auto;
+    padding-left: 0px;
+    padding-right: 0px; }
+    /* line 9, responsive-max768.css.scss */
+    body .container-fluid {
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto; }
+
+  /* line 16, responsive-max768.css.scss */
+  .comment-container {
+    height: 320px; }
+
+  /* line 20, responsive-max768.css.scss */
+  #draggable-events {
+    display: none; }
+
+  /* line 21, responsive-max768.css.scss */
+  #calendar-title {
+    display: none; }
+
+  /* error page */
+  /* line 24, responsive-max768.css.scss */
+  .error-container {
+    width: 280px;
+    margin-top: 20px; }
+    /* line 27, responsive-max768.css.scss */
+    .error-container .info-text {
+      padding: 5px 0px;
+      font-size: 16px; }
+    /* line 28, responsive-max768.css.scss */
+    .error-container .error-text {
+      font-size: 100px; }
+    /* line 29, responsive-max768.css.scss */
+    .error-container .actions {
+      padding: 5px 0px; }
+
+  /* line 32, responsive-max768.css.scss */
+  .padded {
+    padding: 10px 20px; } }

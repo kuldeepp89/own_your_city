@@ -1,0 +1,271 @@
+extend ../partials/init.part.jade
+
+block bodyBlock
+  
+  include navigation.part.jade
+  include ../dashboard/topbar.part.jade
+  block mainBlock
+    section#main
+      .container-fluid
+        .row-fluid
+          .span12
+            if messages.errors
+              .alert.alert-danger.animated.fadeIn
+                for error in messages.errors
+                  div= error.msg
+            if messages.info
+              .alert.alert-info.animated.fadeIn
+                for info in messages.info
+                  div= info.msg
+            if messages.success
+              .alert.alert-success.animated.fadeIn
+                for success in messages.success
+                  div= success.msg
+            .alert-success
+        .row-fluid
+          .span12
+            .span7
+              .pageHeadingTitle
+                .box-header
+                  i.icon-picture
+                  | Upload House
+              .row-fluid
+                .span11.offset1
+                  #gallery.gallery(data-target='#modal-gallery', data-toggle='modal-gallery')
+                    a(class='house-pic')
+              .row-fluid
+                .span3.offset1
+                  .padded5
+                    button.btn
+                      span.action#upload-pic-in
+                        | &plus; Upload Images
+              form(id='upload-form', method='post', enctype="multipart/form-data")
+                input(type='hidden', name='_csrf', value='#{csrfToken}')
+                input(type='file', name='index', class="house-pic", hidden='true')
+                .row-fluid
+                  .span12
+                    .span11.offset1
+                      select#chooseCity.chzn-select(data-placeholder='Select City', class='city', name='city', required='true')
+                        option(value='') Select City
+                        option(value='newyork') New York
+                        option(value='boston') Boston
+                        option(value='washington') Washington
+                        option(value='philadelphia') Philadelphia
+                      
+                .row-fluid
+                  .vpadded
+                    .span11.offset1
+                      .input.full-width
+                        input(type='text', placeholder='House number', class='houseNumber', name='houseNumber', required='true')
+                .row-fluid
+                  .vpadded
+                    .span11.offset1
+                      .input.full-width
+                        input(type='text', placeholder='Street Number or Street Name', class='streetNumber', name='streetNumber', required='true')
+                .row-fluid
+                  .vpadded
+                    .span11.offset1
+                      .input.full-width
+                        input(type='text', placeholder='Pin Code', class='pinCode', name='pinCode',required='true')
+                .row-fluid
+                  .vpadded
+                    .span11.offset1
+                      .input.full-width
+                        input(type='text', placeholder='Neighbourhood', class='neighbourHood', name='neighbourHood', required='true')
+                .row-fluid
+                  .span11.offset1
+                    select.chzn-select(data-placeholder='Type Of House', class='typeOfHouse', name='typeOfHouse', id='type-of-house', required='true')
+                      option(value='') Type of House
+                      option(value='condo') Condo
+                      option(value='apartment') Apartment
+                      option(value='studio') Studio
+                      option(value='onebedroom') One Bed room
+                      option(value='twobedroom') Two Bed Room
+                .row-fluid.hide-condo
+                  .vpadded
+                    .span5.offset2
+                      .input.full-width
+                        input(type='number', placeholder='Monthly Condo Fees', class='monthlyFee', name='monthlyFee')
+                .row-fluid.hide-condo
+                  .span5.offset2
+                    .input.full-width
+                      .uploader
+                        span.filename#uploadcondodoc Upload Condo Documents
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='condoDocument', name='condoDocument', onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .uploader
+                        span.filename#floorplan Upload Floor Plan Documents
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='floorPlanDocument', name='floorPlanDocument', required='true',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      input(type='text', maxlength = 45, placeholder='Description', class='description', name='description', required='true')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .uploader
+                        span.filename#ownershipdoc Ownership Doc
+                        span.action
+                          i.icon-circle-arrow-up
+                          input(type='file', class='ownershipDocument', name='ownershipDocument', required='true',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .uploader
+                        span.filename#taxesbills Taxes and Bills Doc
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='billDocument', name='billDocument', required='true',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      input(type='number', placeholder='Built Year', class='age', name='age', required='true')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .uploader
+                        span.filename#repair Repair and Maintainance
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='repairAndMaintenanceDocument', name='repairAndMaintenanceDocument', required='true',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .uploader
+                        span.filename#renovationdoc Proof of Renovation document
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='renovationDocument', name='renovationDocument', required='true',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span4.offset1
+                    .full-width
+                      label.checkbox
+                        | Is the property on rent&quest;
+                        input(id='is-rent', type='checkbox', class='isRent', name='isRent')
+                .row-fluid.hide-rent
+                  .span5.offset2
+                    .input.full-width
+                      input(type='text', placeholder='Monthly Rent', class='monthlyRent', name='monthlyRent')
+                .row-fluid.hide-rent
+                  .span5.offset2
+                    .input.full-width
+                      .uploader
+                        span.filename#monthlyrent Upload Verification of Monthly rent received
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='rentReceivedDocument', name='rentReceivedDocument',onchange = 'onFileSelect(this)')
+                .row-fluid.hide-rent
+                  .span5.offset2
+                    .input.full-width
+                      .uploader
+                        span.filename#propertymanagement Upload Agreement with Property Management Company
+                        span.action
+                          i.icon-circle-arrow-up
+                        input(type='file', class='managementDocument', name='managementDocument',onchange = 'onFileSelect(this)')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      input(type='number', placeholder='Total Number of Shares', class='numberOfShare', name='numberOfShare', required='true')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      input(type='number', placeholder='Cost of each Share', class='costOfShare', name='costOfShare', required='true')
+                .row-fluid
+                  .span11.offset1
+                    .input.full-width
+                      .input-append.date.form_datetime
+                        input(type='text', placeholder='Bidding End Date', id='biddingEndDate', class='biddingEndDate', name='biddingEndDate', required='true')                      
+                        span.add-on
+                          i.icon-th    
+                .row-fluid
+                  .span3.offset4
+                    .padded5
+                      button.btn.btn-large.medium-blue.login-btn#add-house(type='submit')
+                        | Upload House
+            .span5#googlemap.vpadded(style= 'height: 350px; margin-top: 120px')
+
+            .row-fluid
+              .span6.offset1
+            .row-fluid
+              .span6.offset1
+                div.row
+                  div.span12
+                    div.progress.progress-striped.active.hide
+                      div.bar(style='width: 0%')
+    #modal-gallery.modal.modal-gallery.hide.fade(tabindex='-1')
+      .modal-header
+        a.close(data-dismiss='modal') &times;
+        h3.modal-title
+      .modal-body
+        .modal-image
+      .modal-footer
+        a.btn.modal-download.light-blue.inverse(target='_blank')
+          i.icon-download
+          | Remove Pic
+        a.btn.modal-prev.medium-blue
+          i.icon-arrow-left.icon-white
+          | Previous
+        a.btn.modal-next.medium-blue
+          | Next
+          i.icon-arrow-right.icon-white
+    .jvectormap-label
+    .jvectormap-label
+    script(src='/public/javascripts/image-uploader.js', type='text/javascript')
+    script(src='/public/javascripts/formdata-upload.js', type='text/javascript')
+    script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyCnDEvtsmWYLFiUrugQdAF7fqO7e9wmsS8&sensor=false')
+    script.
+      function codeAddress(address, zoomLevel) {
+        var geocoder;
+        var map;
+        geocoder = new google.maps.Geocoder();
+        var latlng = new google.maps.LatLng(38.8833, 77.0167);
+        var mapOptions = {
+          zoom: zoomLevel,
+          center: latlng,
+          mapTypeControl: true,
+          panControl: true,
+          panControlOptions: {
+            position: google.maps.ControlPosition.TOP_RIGHT
+          },
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_CENTER
+          }
+        }
+        map = new google.maps.Map(document.getElementById("googlemap"), mapOptions);
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: map,
+              position: results[0].geometry.location
+            });
+          } 
+          else {
+            alert("Geocode was not successful for the following reason: " + status);
+          }
+        });
+      }
+      window.onload = function(){  
+        $('.city').change(function () {
+          var input  = document.getElementById('chooseCity');
+          var selectedValue = input.options[input.selectedIndex].value;
+          if(selectedValue == '')
+            codeAddress("United States", 2);
+          else
+            codeAddress(selectedValue, 10);
+        })
+        $('.neighbourHood').keyup(function(){
+          var fullAddress = $('.houseNumber').val() + " " + $('.streetNumber').val() + " "  
+            + $('.pinCode').val()
+          codeAddress(fullAddress, 17);
+        }) 
+      }
+      codeAddress("United States", 2);

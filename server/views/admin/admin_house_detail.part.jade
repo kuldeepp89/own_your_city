@@ -1,0 +1,63 @@
+
+#editModal.modal.hide.fade(aria-hidden='true', aria-labelledby='myModalLabel', role='dialog', tabindex='-1')
+  .modal-header
+    button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+    .pageHeadingTitle
+      .box-header
+        i.icon-picture
+        | Edit Bidding End Date
+  .modal-body
+    .row-fluid
+      .vpadded
+        .span6.offset1(style='margin-top: 18px;')
+          form.login-form(method='post', action='/house/editBidDate/#{house._id}')
+            input(type='hidden', name='_csrf', value='#{csrfToken}')
+            .input.full-width
+              .input-append.date.form_datetime
+                      input(type='text', placeholder='Bidding End Date', id='biddingEndDate', class='biddingEndDate', name='biddingEndDate', required='true')                      
+                      span.add-on
+                        i.icon-th
+            .action
+              button.btn.full-width.blue#updateDate(type='submit')
+                | Update Date
+
+#ownersDetail.modal.hide.fade(aria-hidden='true', aria-labelledby='myModalLabel', role='dialog', tabindex='-1')
+  .modal-header
+    button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+    .pageHeadingTitle
+      .box-header
+        i.icon-picture
+        | Owner Detail
+  .modal-body
+    .row-fluid
+      .span3
+        b
+          | Name
+      .span3
+        b
+          | Share's Own
+      .span3
+        b
+          | Investment
+      if pFunded == 100
+        .span3
+          b
+            | Document Verify
+
+    for j in modalData
+      .row-fluid
+        .span3.padded10
+          | #{j[0]}
+        .span3.padded10
+          | #{j[1].noShare}
+        .span3.padded10
+          | #{j[1].amt}
+        if (pFunded == 100 && !(j[1].cba))
+          a(href='/verifybid/#{j[1]._id}/#{j[1].hId}' data-toggle = 'modal').span2.btn.green
+            | Verify
+        else
+          | Verified
+    
+script(src='/public/javascripts/image-uploader.js', type='text/javascript')          
+      
+      

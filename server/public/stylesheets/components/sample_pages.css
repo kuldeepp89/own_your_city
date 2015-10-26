@@ -1,0 +1,292 @@
+/* Image Gallery */
+/* line 6, components/sample_pages.css.scss */
+.gallery img.thumb {
+  padding: 4px;
+  margin: 3px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* FAQ */
+/* line 16, components/sample_pages.css.scss */
+.faq-questions {
+  list-style-type: none; }
+  /* line 18, components/sample_pages.css.scss */
+  .faq-questions .faq-number {
+    min-width: 25px;
+    display: inline-block; }
+  /* line 22, components/sample_pages.css.scss */
+  .faq-questions li {
+    line-height: 20px; }
+
+/* line 27, components/sample_pages.css.scss */
+.faq-list {
+  list-style-type: none; }
+  /* line 29, components/sample_pages.css.scss */
+  .faq-list .faq-number {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .9em;
+    line-height: 28px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 3px solid #eeeeee;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #67a0be;
+    background: #4a8bad;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1OTViNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRhOGJhZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5595b6), color-stop(100%, #4a8bad));
+    background-image: -webkit-linear-gradient(top, #5595b6, #4a8bad);
+    background-image: -moz-linear-gradient(top, #5595b6, #4a8bad);
+    background-image: -o-linear-gradient(top, #5595b6, #4a8bad);
+    background-image: linear-gradient(top, #5595b6, #4a8bad); }
+
+/* line 48, components/sample_pages.css.scss */
+.faq-left {
+  margin-top: 5px; }
+  /* line 50, components/sample_pages.css.scss */
+  .faq-left .faq-well {
+    margin-top: 10px; }
+
+/* END FAQ */
+/* Pricing Plans */
+/* line 59, components/sample_pages.css.scss */
+.pricing-plans .header {
+  margin: 40px auto; }
+  /* line 61, components/sample_pages.css.scss */
+  .pricing-plans .header .tagline {
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  /* line 67, components/sample_pages.css.scss */
+  .pricing-plans .header .subtitle {
+    font-size: 2em; }
+/* line 70, components/sample_pages.css.scss */
+.pricing-plans .plan-container {
+  width: 100%;
+  max-width: 340px;
+  margin: 10px auto; }
+  /* line 76, components/sample_pages.css.scss */
+  .pricing-plans .plan-container .plan-box.featured .plan > .plan-price {
+    background: #d2e3ec; }
+  /* line 81, components/sample_pages.css.scss */
+  .pricing-plans .plan-container .plan-box {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid #CCC;
+    background: #fff;
+    text-align: center;
+    overflow: hidden; }
+    /* line 90, components/sample_pages.css.scss */
+    .pricing-plans .plan-container .plan-box .plan {
+      margin: 10px;
+      border: 1px solid #e4e4e4;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
+      /* line 95, components/sample_pages.css.scss */
+      .pricing-plans .plan-container .plan-box .plan .plan-title {
+        height: 50px;
+        line-height: 50px;
+        font-size: 2em;
+        font-weight: 700;
+        border-bottom: 1px solid #e4e4e4;
+        color: rgba(51, 86, 106, 0.5);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+      /* line 106, components/sample_pages.css.scss */
+      .pricing-plans .plan-container .plan-box .plan .plan-price {
+        font-size: 2.5em;
+        height: 50px;
+        line-height: 50px;
+        color: #67a0be;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+        background: #f3f3f3;
+        border-bottom: 1px solid #e4e4e4; }
+        /* line 115, components/sample_pages.css.scss */
+        .pricing-plans .plan-container .plan-box .plan .plan-price span.permonth {
+          padding-left: 5px;
+          font-size: 0.4em; }
+        /* line 120, components/sample_pages.css.scss */
+        .pricing-plans .plan-container .plan-box .plan .plan-price span.dollar {
+          position: relative;
+          top: -11px;
+          left: -2px;
+          display: inline;
+          font-size: 0.4em;
+          line-height: 0.4em; }
+      /* line 130, components/sample_pages.css.scss */
+      .pricing-plans .plan-container .plan-box .plan ul {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+        list-style: none; }
+        /* line 131, components/sample_pages.css.scss */
+        .pricing-plans .plan-container .plan-box .plan ul li {
+          padding: 1em 0;
+          margin: 0 2em;
+          text-align: center; }
+      /* line 141, components/sample_pages.css.scss */
+      .pricing-plans .plan-container .plan-box .plan .plan-actions {
+        padding-bottom: 10px; }
+        /* line 143, components/sample_pages.css.scss */
+        .pricing-plans .plan-container .plan-box .plan .plan-actions .purchase-btn {
+          width: 60%; }
+
+/* END Pricing Plans */
+/* Login page */
+/* line 152, components/sample_pages.css.scss */
+.login-container {
+  width: 330px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; }
+  /* line 160, components/sample_pages.css.scss */
+  .login-container .title {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: right; }
+  /* line 167, components/sample_pages.css.scss */
+  .login-container .login-form {
+    width: 100%;
+    margin-top: 20px; }
+    /* line 171, components/sample_pages.css.scss */
+    .login-container .login-form .actions {
+      width: 100%;
+      padding: 20px 0;
+      line-height: 40px; }
+      /* line 175, components/sample_pages.css.scss */
+      .login-container .login-form .actions .login-btn {
+        width: 100%; }
+    /* line 178, components/sample_pages.css.scss */
+    .login-container .login-form .social-actions {
+      overflow: hidden;
+      *zoom: 1;
+      width: 100%; }
+      /* line 182, components/sample_pages.css.scss */
+      .login-container .login-form .social-actions .social-link {
+        float: right;
+        padding: 5px 10px;
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 600; }
+    /* line 191, components/sample_pages.css.scss */
+    .login-container .login-form .fields-list {
+      list-style: none;
+      margin: 0;
+      padding: 0px;
+      -webkit-border-radius: 4px 4px;
+      -moz-border-radius: 4px 4px;
+      -ms-border-radius: 4px 4px;
+      -o-border-radius: 4px 4px;
+      border-radius: 4px 4px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+      background: rgba(0, 0, 0, 0.05);
+      overflow: hidden; }
+      /* line 201, components/sample_pages.css.scss */
+      .login-container .login-form .fields-list li {
+        position: relative;
+        padding: 4px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        line-height: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+        /* line 206, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li:first-child {
+          border-top: 0px; }
+        /* line 207, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li:last-child {
+          -moz-border-radius-bottomleft: 4px;
+          -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          -moz-border-radius-bottomright: 4px;
+          -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px; }
+        /* line 216, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li i {
+          position: absolute;
+          top: 11px;
+          color: #888; }
+        /* line 222, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li input {
+          width: 100%;
+          margin: 0;
+          padding-left: 25px;
+          border: none;
+          font-size: 12px;
+          background: transparent;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none; }
+          /* line 232, components/sample_pages.css.scss */
+          .login-container .login-form .fields-list li input:focus i {
+            color: #444; }
+        /* line 235, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li input:-moz-placeholder {
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+        /* line 236, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li input::-moz-placeholder {
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+        /* line 237, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li input::-webkit-input-placeholder {
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+        /* line 238, components/sample_pages.css.scss */
+        .login-container .login-form .fields-list li input:-ms-input-placeholder {
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+
+/* end login */
+/* error page */
+/* line 248, components/sample_pages.css.scss */
+.error-container {
+  width: 500px;
+  min-height: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  padding: 20px; }
+  /* line 257, components/sample_pages.css.scss */
+  .error-container .info-text {
+    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 8px 0px; }
+  /* line 264, components/sample_pages.css.scss */
+  .error-container .error-text {
+    font-size: 200px;
+    line-height: 200px;
+    font-weight: 600; }
+  /* line 270, components/sample_pages.css.scss */
+  .error-container .actions {
+    padding: 8px 0px; }

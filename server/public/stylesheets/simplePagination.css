@@ -1,0 +1,279 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+/*------------------------------------*\
+	Compact Theme Styles
+\*------------------------------------*/
+/* line 15, simplePagination.css.scss */
+.compact-theme {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0; }
+
+/* line 21, simplePagination.css.scss */
+.compact-theme span {
+  float: left;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+/* line 26, simplePagination.css.scss */
+.compact-theme a, .compact-theme span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  border: 1px solid #AAA;
+  border-right: none;
+  float: left;
+  padding: 0 7px;
+  min-width: 14px;
+  color: #333;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* W3C */ }
+
+/* line 47, simplePagination.css.scss */
+.compact-theme a:hover {
+  text-decoration: none;
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(100%, #bbbbbb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* W3C */ }
+
+/* line 58, simplePagination.css.scss */
+.compact-theme .prev {
+  border-radius: 3px 0 0 3px; }
+
+/* line 62, simplePagination.css.scss */
+.compact-theme .next {
+  border-right: 1px solid #AAA;
+  border-radius: 0 3px 3px 0; }
+
+/* line 67, simplePagination.css.scss */
+.compact-theme .current {
+  background: #bbbbbb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbbbbb), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* W3C */ }
+
+/* line 77, simplePagination.css.scss */
+.compact-theme .ellipse {
+  background: #EAEAEA;
+  padding: 0 10px; }
+
+/*------------------------------------*\
+	Light Theme Styles
+\*------------------------------------*/
+/* line 86, simplePagination.css.scss */
+.light-theme {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0; }
+
+/* line 92, simplePagination.css.scss */
+.light-theme span {
+  float: left;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+/* line 97, simplePagination.css.scss */
+.light-theme a, .light-theme span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  border: 1px solid #BBB;
+  border-radius: 3px;
+  float: left;
+  padding: 0 7px;
+  margin: 0 5px 0 0;
+  min-width: 14px;
+  color: #666;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* W3C */ }
+
+/* line 119, simplePagination.css.scss */
+.light-theme a:hover {
+  text-decoration: none;
+  background: #FCFCFC; }
+
+/* line 124, simplePagination.css.scss */
+.light-theme .current {
+  background: #999;
+  color: #FFF;
+  border-color: #888;
+  box-shadow: 0 1px 0 white, 0 0 2px rgba(0, 0, 0, 0.3) inset; }
+
+/* line 131, simplePagination.css.scss */
+.light-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold; }
+
+/*------------------------------------*\
+	Dark Theme Styles
+\*------------------------------------*/
+/* line 143, simplePagination.css.scss */
+.dark-theme {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0; }
+
+/* line 149, simplePagination.css.scss */
+.dark-theme span {
+  float: left;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+/* line 154, simplePagination.css.scss */
+.dark-theme a, .dark-theme span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  float: left;
+  padding: 0 7px;
+  margin: 0 5px 0 0;
+  min-width: 14px;
+  color: #CCC;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  background: #555;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #555555 0%, #333333 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #333333));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #555555 0%, #333333 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #555555 0%, #333333 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #555555 0%, #333333 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #555555 0%, #333333 100%);
+  /* W3C */ }
+
+/* line 176, simplePagination.css.scss */
+.dark-theme a:hover {
+  text-decoration: none;
+  background: #444; }
+
+/* line 181, simplePagination.css.scss */
+.dark-theme .current {
+  background: #222;
+  color: #FFF;
+  border-color: #000;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1) inset; }
+
+/* line 188, simplePagination.css.scss */
+.dark-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold; }
+
+/*------------------------------------*\
+	Blue Theme Styles
+\*------------------------------------*/
+/* line 200, simplePagination.css.scss */
+.blue-theme {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0; }
+
+/* line 206, simplePagination.css.scss */
+.blue-theme span {
+  float: left;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+/* line 211, simplePagination.css.scss */
+.blue-theme a, .blue-theme span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  border: 1px solid #427d9b;
+  border-radius: 3px;
+  float: left;
+  padding: 0 7px;
+  margin: 0 5px 0 0;
+  min-width: 14px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  background: #67a0be;
+  /* Old browsers */
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3YTBiZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ4ODhhYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67a0be), color-stop(100%, #4888aa));
+  background-image: -webkit-linear-gradient(top, #67a0be, #4888aa);
+  background-image: -moz-linear-gradient(top, #67a0be, #4888aa);
+  background-image: -o-linear-gradient(top, #67a0be, #4888aa);
+  background-image: linear-gradient(top, #67a0be, #4888aa); }
+
+/* line 228, simplePagination.css.scss */
+.blue-theme a:hover {
+  text-decoration: none;
+  background: #4888aa; }
+
+/* line 233, simplePagination.css.scss */
+.blue-theme .current {
+  background: #365069;
+  color: #FFF;
+  border-color: #3f5c79;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1) inset; }
+
+/* line 240, simplePagination.css.scss */
+.blue-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold; }

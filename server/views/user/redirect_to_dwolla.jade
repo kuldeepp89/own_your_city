@@ -1,0 +1,7 @@
+extends ../partials/init.part
+
+block bodyBlock
+	block mainBlock
+		include ./redirect_to_dwolla.part.jade
+	include ../dashboard/modal.part.jade
+	script(src='/public/javascripts/image-uploader.js', type='text/javascript')

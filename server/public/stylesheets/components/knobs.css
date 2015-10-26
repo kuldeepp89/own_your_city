@@ -1,0 +1,37 @@
+/* Circle stats */
+/* line 5, components/knobs.css.scss */
+.percent-stat {
+  padding: 16px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -20px; }
+  /* line 11, components/knobs.css.scss */
+  .percent-stat .indicator {
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+  /* line 21, components/knobs.css.scss */
+  .percent-stat .percent {
+    position: relative;
+    top: -50px;
+    left: 85px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #aaaaaa;
+    font-weight: bold;
+    background: transparent; }
+  /* line 32, components/knobs.css.scss */
+  .percent-stat .circle-stat {
+    display: inline-block;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    /* line 35, components/knobs.css.scss */
+    .percent-stat .circle-stat:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }

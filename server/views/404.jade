@@ -1,0 +1,26 @@
+extends ./partials/init.part
+
+block bodyBlock
+  .top-bar
+    a#topbar-brand-out.brand(href='../dashboard.html')
+      | Whitemin
+    .pull-right
+      .hpadded20
+        a.btn.btn-small.dark-blue(href='../dashboard.html') Dashboard
+  section#main
+    .container-fluid
+      .row-fluid
+        .span12
+          .error-container.center
+            .info-text.text-transparent
+              | Sorry&excl; Something went wrong here&excl;
+            hr.main
+            .error-text.text-transparent
+              | 404&excl;
+            hr.main
+            .info-text.text-transparent
+              | Error&colon; Requested page not found&period;
+            .actions
+              a.btn.medium-blue(href='../dashboard.html')
+                i.icon-ok-sign
+                | Back to Dashboard

@@ -1,0 +1,9 @@
+/* line 4, components/charts.css.scss */
+.chart {
+  width: 100%;
+  height: 300px;
+  min-height: 150px; }
+
+/* line 10, components/charts.css.scss */
+td.legendLabel {
+  padding-left: 4px; }

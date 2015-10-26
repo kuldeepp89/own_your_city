@@ -1,0 +1,106 @@
+/* Bootstrap - collapsible groups overrides */
+/* line 5, general/overrides.css.scss */
+.accordion-group .accordion-heading {
+  background: #eeeeee; }
+  /* line 6, general/overrides.css.scss */
+  .accordion-group .accordion-heading a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+
+/* line 15, general/overrides.css.scss */
+img {
+  vertical-align: baseline; }
+
+/* Buttons and dropdowns overrides */
+/* line 18, general/overrides.css.scss */
+.dropdown-menu {
+  font-size: 13px; }
+
+/* line 19, general/overrides.css.scss */
+.btn-group > .btn, .btn-group > .dropdown-menu {
+  font-size: 13px; }
+
+/* line 20, general/overrides.css.scss */
+.btn {
+  font-size: 13px; }
+  /* line 21, general/overrides.css.scss */
+  .btn.twitter, .btn.facebook {
+    font-size: 13px; }
+  /* line 23, general/overrides.css.scss */
+  .btn.btn-mini {
+    font-size: 11px; }
+
+/* Blockquotes */
+/* line 27, general/overrides.css.scss */
+blockquote {
+  margin: 5px auto; }
+
+/* line 28, general/overrides.css.scss */
+blockquote p {
+  font-size: 12px; }
+
+/* line 29, general/overrides.css.scss */
+.blockquote-light-blue {
+  border-left: 5px solid #aad7ea; }
+
+/* line 30, general/overrides.css.scss */
+.blockquote-medium-blue {
+  border-left: 5px solid #67a0be; }
+
+/* line 31, general/overrides.css.scss */
+.blockquote-dark-blue {
+  border-left: 5px solid #50769b; }
+
+/* line 32, general/overrides.css.scss */
+.blockquote-dark-plum {
+  border-left: 5px solid #6c5e6d; }
+
+/* line 33, general/overrides.css.scss */
+.blockquote-yellow {
+  border-left: 5px solid #f0c22e; }
+
+/* line 34, general/overrides.css.scss */
+.blockquote-orange {
+  border-left: 5px solid #ff8330; }
+
+/* line 35, general/overrides.css.scss */
+.blockquote-red {
+  border-left: 5px solid #db3535; }
+
+/* line 36, general/overrides.css.scss */
+.blockquote-turquoise {
+  border-left: 5px solid #39c5aa; }
+
+/* line 37, general/overrides.css.scss */
+.blockquote-green {
+  border-left: 5px solid #63a822; }
+
+/* line 38, general/overrides.css.scss */
+.blockquote-plum {
+  border-left: 5px solid #ca6eff; }
+
+/* line 39, general/overrides.css.scss */
+.blockquote-blue {
+  border-left: 5px solid #2191ed; }
+
+/* line 42, general/overrides.css.scss */
+hr.main {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #F5F5F5; }
+
+/* Custom font fixes */
+/* line 50, general/overrides.css.scss */
+.label, .badge {
+  font-weight: 600; }
+
+/* line 51, general/overrides.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+/* line 52, general/overrides.css.scss */
+strong, em, th, thead {
+  font-weight: 600; }

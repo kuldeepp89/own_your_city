@@ -1,0 +1,14 @@
+/* line 4, components/modals.css.scss */
+.modal {
+  border: 1px solid #d7d7d7; }
+
+/* line 7, components/modals.css.scss */
+.modal-header {
+  background: #f6f6f6;
+  border-bottom: 1px solid #e1e1e1;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px; }

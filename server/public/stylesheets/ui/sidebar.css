@@ -1,0 +1,272 @@
+/* line 4, ui/sidebar.css.scss */
+nav.main-nav > ul > li.profile > a {
+  padding-left: 0px; }
+
+/* line 10, ui/sidebar.css.scss */
+nav.main-nav > ul > li {
+  border-bottom: 1px solid #1D1E21;
+  border-top: 1px solid #4A4A54;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+  /* line 16, ui/sidebar.css.scss */
+  nav.main-nav > ul > li.profile img.avatar {
+    width: 80px;
+    height: 80px;
+    margin: 5px auto 0 auto;
+    border: 3px solid #eeeeee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    display: block;
+    background-size: 100%; }
+    /* line 25, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user1 {
+      background-image: url('../images/users/user1.png'); }
+    /* line 26, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user2 {
+      background-image: url('../images/users/user2.png'); }
+    /* line 27, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user3 {
+      background-image: url('../images/users/user3.png'); }
+    /* line 28, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user4 {
+      background-image: url('../images/users/user4.png'); }
+    /* line 29, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user5 {
+      background-image: url('../images/users/user5.png'); }
+    /* line 30, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user6 {
+      background-image: url('../images/users/user6.png'); }
+    /* line 31, ui/sidebar.css.scss */
+    nav.main-nav > ul > li.profile img.avatar.user7 {
+      background-image: url('../images/users/user7.png'); }
+  /* line 33, ui/sidebar.css.scss */
+  nav.main-nav > ul > li.profile .text {
+    width: 100%;
+    text-align: center; }
+  /* line 37, ui/sidebar.css.scss */
+  nav.main-nav > ul > li.profile #profile-text {
+    margin-left: 25px; }
+  /* line 40, ui/sidebar.css.scss */
+  nav.main-nav > ul > li > a {
+    padding: 7px 0;
+    padding-left: 12px;
+    display: block;
+    color: #ddd;
+    text-align: left;
+    text-decoration: none; }
+    /* line 49, ui/sidebar.css.scss */
+    nav.main-nav > ul > li > a:hover, nav.main-nav > ul > li > a:active {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  /* line 56, ui/sidebar.css.scss */
+  nav.main-nav > ul > li.active {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3); }
+
+/* line 64, ui/sidebar.css.scss */
+nav#primary {
+  background-color: #333;
+  background: url('../images/patterns/low_linen.png');
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 0px 5px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 3px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 0px 5px 0px;
+  border-right: 1px solid #1D1E21;
+  float: left;
+  width: 140px;
+  height: 100%;
+  position: fixed;
+  margin-top: 42px;
+  font-size: 11px; }
+  /* line 77, ui/sidebar.css.scss */
+  nav#primary i:before {
+    display: inline-block;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-decoration: inherit; }
+  /* line 86, ui/sidebar.css.scss */
+  nav#primary > ul > li > a {
+    line-height: 36px;
+    opacity: .9; }
+    /* line 90, ui/sidebar.css.scss */
+    nav#primary > ul > li > a .icon {
+      display: inline-block;
+      margin-top: 3px;
+      width: 20%; }
+    /* line 95, ui/sidebar.css.scss */
+    nav#primary > ul > li > a .text {
+      display: inline-block;
+      width: 65%;
+      margin-left: 7px; }
+    /* line 101, ui/sidebar.css.scss */
+    nav#primary > ul > li > a i {
+      display: inline-block;
+      font-size: 26px;
+      height: 24px;
+      padding-right: 5px;
+      vertical-align: top;
+      width: 100%; }
+    /* line 110, ui/sidebar.css.scss */
+    nav#primary > ul > li > a .caret {
+      border-top-color: #fff;
+      border-bottom-color: #fff;
+      margin-top: 16px; }
+
+/* line 120, ui/sidebar.css.scss */
+ul.secondary {
+  width: 100%;
+  background: #333;
+  background-image: url('../images/patterns/low_linen.png'); }
+  /* line 125, ui/sidebar.css.scss */
+  ul.secondary li.active > a {
+    color: #fff; }
+  /* line 127, ui/sidebar.css.scss */
+  ul.secondary li {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #353535;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+    /* line 131, ui/sidebar.css.scss */
+    ul.secondary li:first-child {
+      border-top: 1px solid #222; }
+    /* line 132, ui/sidebar.css.scss */
+    ul.secondary li:last-child {
+      border-bottom: 0; }
+    /* line 135, ui/sidebar.css.scss */
+    ul.secondary li > a {
+      width: 100%;
+      display: block;
+      color: #eeeeee;
+      height: 30px;
+      line-height: 30px;
+      font-size: 1em;
+      text-align: left;
+      padding-left: 30px;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+      /* line 146, ui/sidebar.css.scss */
+      ul.secondary li > a:hover, ul.secondary li > a.active, ul.secondary li > a:active {
+        color: #fff;
+        background: #396b86;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    /* line 153, ui/sidebar.css.scss */
+    ul.secondary li.active a {
+      color: #fff;
+      background: #4888aa; }
+
+/* line 161, ui/sidebar.css.scss */
+.top-bar {
+  position: fixed;
+  z-index: 500;
+  height: 42px;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+  background: url('../images/patterns/low_linen.png');
+  border-bottom: 1px solid #292929; }
+  /* line 173, ui/sidebar.css.scss */
+  .top-bar a.brand {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    padding-left: 20px;
+    font-family: HelveticaNeue, Helvetica, Arial;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125); }
+    /* line 183, ui/sidebar.css.scss */
+    .top-bar a.brand:hover, .top-bar a.brand:active, .top-bar a.brand.active {
+      color: #fff; }
+  /* line 186, ui/sidebar.css.scss */
+  .top-bar ul.top-notifications {
+    width: 50%;
+    float: right;
+    margin-right: 15px;
+    display: inline-block;
+    list-style: none; }
+    /* line 194, ui/sidebar.css.scss */
+    .top-bar ul.top-notifications > li {
+      float: right;
+      display: inline-block;
+      line-height: 42px;
+      text-align: right;
+      margin-right: 15px; }
+      /* line 201, ui/sidebar.css.scss */
+      .top-bar ul.top-notifications > li > a {
+        display: block;
+        padding: 0px 5px;
+        font-size: .9em;
+        color: #aaaaaa;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+        /* line 209, ui/sidebar.css.scss */
+        .top-bar ul.top-notifications > li > a:hover, .top-bar ul.top-notifications > li > a:active {
+          color: #67a0be; }
+
+/* line 217, ui/sidebar.css.scss */
+ul.top-bar-list {
+  margin-top: -2px;
+  margin-left: -30px;
+  width: 120px;
+  min-width: 120px;
+  background: rgba(0, 0, 0, 0.2);
+  background-image: url('../images/patterns/low_linen.png');
+  border: 1px solid #1D1E21;
+  border-top: 0;
+  border-bottom: 0;
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px; }
+  /* line 233, ui/sidebar.css.scss */
+  ul.top-bar-list li {
+    border-bottom: 1px solid #1D1E21;
+    border-top: 1px solid #4A4A54;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+    /* line 236, ui/sidebar.css.scss */
+    ul.top-bar-list li:first-child {
+      border-top: none; }
+    /* line 237, ui/sidebar.css.scss */
+    ul.top-bar-list li:last-child {
+      border-bottom: none; }
+    /* line 241, ui/sidebar.css.scss */
+    ul.top-bar-list li > a {
+      padding-left: 15px;
+      padding-right: 15px;
+      display: block;
+      font-size: .9em;
+      color: #eeeeee;
+      line-height: 24px;
+      text-align: left; }
+      /* line 251, ui/sidebar.css.scss */
+      ul.top-bar-list li > a .count {
+        color: #6c5e6d;
+        font-weight: 600;
+        font-size: 1.2em; }
+      /* line 257, ui/sidebar.css.scss */
+      ul.top-bar-list li > a:hover, ul.top-bar-list li > a.active, ul.top-bar-list li > a:active {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff; }
+    /* line 263, ui/sidebar.css.scss */
+    ul.top-bar-list li.active a {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.3); }

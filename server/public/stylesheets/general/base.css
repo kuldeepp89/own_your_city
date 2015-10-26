@@ -1,0 +1,57 @@
+/* line 3, general/base.css.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, general/base.css.scss */
+body {
+  font: normal 12px 'Open Sans', HelveticaNeue, Helvetica, Arial; }
+
+/* line 15, general/base.css.scss */
+a {
+  cursor: pointer; }
+
+/* line 16, general/base.css.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 18, general/base.css.scss */
+.padded {
+  padding: 15px 30px; }
+
+/* line 19, general/base.css.scss */
+.padded5 {
+  padding: 5px; }
+
+/* line 20, general/base.css.scss */
+.padded10 {
+  padding: 10px; }
+
+/* line 21, general/base.css.scss */
+.padded20 {
+  padding: 20px; }
+
+/* line 23, general/base.css.scss */
+.hpadded {
+  padding: 0px 8px; }
+
+/* line 24, general/base.css.scss */
+.hpadded20 {
+  padding: 0px 20px; }
+
+/* line 25, general/base.css.scss */
+.vpadded {
+  padding: 8px 0px; }
+
+/* line 26, general/base.css.scss */
+.vpadded20 {
+  padding: 20px 0px; }
+
+/* line 28, general/base.css.scss */
+.center {
+  text-align: center; }

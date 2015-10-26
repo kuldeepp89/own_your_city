@@ -1,0 +1,9 @@
+/* line 4, components/gauges.css.scss */
+.gauge {
+  width: 210px;
+  height: 140px;
+  display: inline-block; }
+
+/* line 10, components/gauges.css.scss */
+.chart {
+  margin: 10px auto; }

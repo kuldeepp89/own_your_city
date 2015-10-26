@@ -1,0 +1,147 @@
+@media (max-width: 979px) {
+  /* line 5, responsive-max1024.css.scss */
+  .comment-container {
+    height: 250px; }
+
+  /* line 9, responsive-max1024.css.scss */
+  .collapsible-nav {
+    width: 100%;
+    height: 40px;
+    margin-top: 0px;
+    background-color: #333;
+    background: url('../images/kuch-bhi/low_linen.png');
+    border-bottom: 1px solid #333; }
+    /* line 17, responsive-max1024.css.scss */
+    .collapsible-nav .btn-navbar {
+      float: right;
+      margin: 6px 10px;
+      padding: 5px 10px; }
+      /* line 21, responsive-max1024.css.scss */
+      .collapsible-nav .btn-navbar i {
+        vertical-align: top; }
+
+  /* line 25, responsive-max1024.css.scss */
+  .top-bar {
+    background-color: #333;
+    background: url('../images/kuch-bhi/low_linen.png');
+    position: relative; }
+    /* line 26, responsive-max1024.css.scss */
+    .top-bar ul.top-notifications {
+      width: 75%; }
+
+  /* line 32, responsive-max1024.css.scss */
+  a#topbar-brand {
+    display: none; }
+
+  /* line 33, responsive-max1024.css.scss */
+  a#sidebar-brand {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    float: left;
+    display: block;
+    margin-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125); }
+    /* line 47, responsive-max1024.css.scss */
+    a#sidebar-brand:hover, a#sidebar-brand:active, a#sidebar-brand.active {
+      color: #fff; }
+
+  /* line 52, responsive-max1024.css.scss */
+  .nav-collapse.collapse.in {
+    display: block; }
+
+  /* line 53, responsive-max1024.css.scss */
+  nav.main-nav > ul > li:first-child {
+    border-top: none; }
+
+  /* line 55, responsive-max1024.css.scss */
+  nav.main-nav > ul > li.profile #profile-text {
+    margin-left: 0px; }
+
+  /* line 58, responsive-max1024.css.scss */
+  nav#primary > ul > li.profile > a .text {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0px; }
+
+  /* line 64, responsive-max1024.css.scss */
+  nav#primary {
+    float: none;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #262626;
+    overflow: visible;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1000; }
+    /* line 75, responsive-max1024.css.scss */
+    nav#primary > ul {
+      width: 100%;
+      background: #333;
+      background-image: url('../images/kuch-bhi/low_linen.png'); }
+    /* line 81, responsive-max1024.css.scss */
+    nav#primary .dropdown {
+      position: relative;
+      z-index: 1; }
+    /* line 87, responsive-max1024.css.scss */
+    nav#primary > ul > li:first-child {
+      border-top: none; }
+    /* line 90, responsive-max1024.css.scss */
+    nav#primary > ul > li > a:hover {
+      background: rgba(0, 0, 0, 0.1); }
+    /* line 95, responsive-max1024.css.scss */
+    nav#primary > ul > li.bottom a {
+      position: static; }
+
+  /* line 101, responsive-max1024.css.scss */
+  ul.secondary {
+    border: 1px solid #333; }
+    /* line 104, responsive-max1024.css.scss */
+    ul.secondary > li > a {
+      text-align: center;
+      color: #eee;
+      font-size: 1em;
+      padding-left: 0px; }
+    /* line 111, responsive-max1024.css.scss */
+    ul.secondary.dropdown-menu {
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.1) 0 1px 0;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.1) 0 1px 0;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.1) 0 1px 0; }
+
+  /* line 120, responsive-max1024.css.scss */
+  section#main {
+    overflow: visible;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px; } }
+@media (max-width: 1050px) {
+  /* line 130, responsive-max1024.css.scss */
+  .big-button {
+    width: 90px;
+    height: 80px; }
+    /* line 133, responsive-max1024.css.scss */
+    .big-button .button-text {
+      line-height: 16px; }
+
+  /* line 136, responsive-max1024.css.scss */
+  .big-button i {
+    width: 36px;
+    line-height: 28px;
+    font-size: 24px; } }

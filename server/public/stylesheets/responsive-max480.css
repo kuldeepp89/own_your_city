@@ -1,0 +1,77 @@
+@media (max-width: 480px) {
+  /* line 4, responsive-max480.css.scss */
+  .chart {
+    height: 150px; }
+
+  /* line 6, responsive-max480.css.scss */
+  body {
+    overflow-y: auto; }
+
+  /* line 8, responsive-max480.css.scss */
+  #gritter-notice-wrapper {
+    position: fixed;
+    top: 90px;
+    right: 8px; }
+
+  /* line 14, responsive-max480.css.scss */
+  .top-bar ul.top-notifications {
+    width: 100%; }
+
+  /* line 15, responsive-max480.css.scss */
+  .recent-comments .comment-box .article .article-actions {
+    margin-left: -65px; }
+
+  /* line 16, responsive-max480.css.scss */
+  .login-container {
+    width: 100%; }
+
+  /* line 17, responsive-max480.css.scss */
+  .login-container .title {
+    margin-bottom: 20px;
+    margin-top: 5px; }
+
+  /* line 22, responsive-max480.css.scss */
+  .chart {
+    max-height: 180px; }
+
+  /* line 23, responsive-max480.css.scss */
+  .percent-stat {
+    padding: 10px; }
+
+  /* line 26, responsive-max480.css.scss */
+  .pricing-plans .header {
+    margin: 20px auto; }
+    /* line 28, responsive-max480.css.scss */
+    .pricing-plans .header .tagline {
+      font-size: 3.5em;
+      margin-bottom: 5px; }
+    /* line 29, responsive-max480.css.scss */
+    .pricing-plans .header .subtitle {
+      font-size: 1.5em; }
+
+  /* line 33, responsive-max480.css.scss */
+  .box .section-title {
+    margin-top: 5px; }
+
+  /* line 35, responsive-max480.css.scss */
+  .login-container {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    /* line 39, responsive-max480.css.scss */
+    .login-container .title {
+      padding-bottom: 0px; }
+
+  /* line 42, responsive-max480.css.scss */
+  .audience-progress {
+    display: none; }
+
+  /* line 44, responsive-max480.css.scss */
+  .gauge {
+    width: 170px;
+    height: 120px;
+    display: inline-block; }
+
+  /* line 50, responsive-max480.css.scss */
+  .padded {
+    padding: 8px 16px; } }

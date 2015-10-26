@@ -1,0 +1,61 @@
+/* line 4, components/alerts.css.scss */
+.alert {
+  margin-bottom: 5px;
+  background-color: #d3eaf4;
+  border: 1px solid #bee1ef;
+  color: #2d8cb5; }
+  /* line 10, components/alerts.css.scss */
+  .alert.light-blue {
+    background: #d3eaf4;
+    border-color: #c7e4f1;
+    color: #287da0; }
+  /* line 11, components/alerts.css.scss */
+  .alert.medium-blue {
+    background: #e4eef3;
+    border-color: #d9e7ef;
+    color: #417a98; }
+  /* line 12, components/alerts.css.scss */
+  .alert.dark-blue {
+    background: #bfcfde;
+    border-color: #b5c7d9;
+    color: #365069; }
+  /* line 13, components/alerts.css.scss */
+  .alert.dark-plum {
+    background: #c3bac3;
+    border-color: #bcb2bc;
+    color: #433b44; }
+  /* line 14, components/alerts.css.scss */
+  .alert.border-blue {
+    background: #e6ecef;
+    border-color: #dde5e9;
+    color: #537283; }
+  /* line 16, components/alerts.css.scss */
+  .alert.orange {
+    background: #ffeee3;
+    border-color: #ffe5d3;
+    color: #e35b00; }
+  /* line 17, components/alerts.css.scss */
+  .alert.yellow {
+    background: #fcf3d5;
+    border-color: #fbeec6;
+    color: #c3980e; }
+  /* line 18, components/alerts.css.scss */
+  .alert.red {
+    background: #f6cdcd;
+    border-color: #f4c0c0;
+    color: #a61e1e; }
+  /* line 19, components/alerts.css.scss */
+  .alert.blue {
+    background: #c6e3fa;
+    border-color: #b8dcf9;
+    color: #0f69b3; }
+  /* line 20, components/alerts.css.scss */
+  .alert.turquoise {
+    background: #c3eee5;
+    border-color: #b7eae0;
+    color: #288a77; }
+  /* line 21, components/alerts.css.scss */
+  .alert.green {
+    background: #bde993;
+    border-color: #b5e787;
+    color: #3e6815; }

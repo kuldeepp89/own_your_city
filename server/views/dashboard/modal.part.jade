@@ -1,0 +1,20 @@
+// Modal dialog used for the image gallery
+#modal-gallery.modal.modal-gallery.hide.fade(tabindex='-1')
+  .modal-header
+    a.close(data-dismiss='modal') &times;
+    h3.modal-title
+  .modal-body
+    .modal-image
+  .modal-footer
+    a.btn.modal-download.light-blue.inverse(target='_blank')
+      i.icon-download
+      | Download
+    a.btn.modal-play.modal-slideshow(data-slideshow='5000')
+      i.icon-play.icon-white
+      | Slideshow
+    a.btn.modal-prev.medium-blue
+      i.icon-arrow-left.icon-white
+      | Previous
+    a.btn.modal-next.medium-blue
+      | Next
+      i.icon-arrow-right.icon-white

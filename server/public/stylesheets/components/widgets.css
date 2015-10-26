@@ -1,0 +1,357 @@
+/* line 4, components/widgets.css.scss */
+.recent-comments {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  /* line 7, components/widgets.css.scss */
+  .recent-comments .comment-box {
+    min-height: 110px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 6px; }
+    /* line 15, components/widgets.css.scss */
+    .recent-comments .comment-box .avatar {
+      width: 80px;
+      height: 80px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      margin: 5px 10px;
+      background-size: 100%; }
+      /* line 23, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user1 {
+        background-image: url('../images/users/user1.png'); }
+      /* line 24, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user2 {
+        background-image: url('../images/users/user2.png'); }
+      /* line 25, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user3 {
+        background-image: url('../images/users/user3.png'); }
+      /* line 26, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user4 {
+        background-image: url('../images/users/user4.png'); }
+      /* line 27, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user5 {
+        background-image: url('../images/users/user5.png'); }
+      /* line 28, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user6 {
+        background-image: url('../images/users/user6.png'); }
+      /* line 29, components/widgets.css.scss */
+      .recent-comments .comment-box .avatar.user7 {
+        background-image: url('../images/users/user7.png'); }
+    /* line 32, components/widgets.css.scss */
+    .recent-comments .comment-box .article {
+      margin-left: 100px; }
+      /* line 35, components/widgets.css.scss */
+      .recent-comments .comment-box .article .post-info {
+        color: #67a0be;
+        font-weight: 600;
+        font-size: 10px;
+        margin-left: 10px; }
+      /* line 42, components/widgets.css.scss */
+      .recent-comments .comment-box .article .post-content-preview {
+        color: #333;
+        margin: 3px 10px; }
+      /* line 47, components/widgets.css.scss */
+      .recent-comments .comment-box .article .article-actions {
+        margin-left: 10px; }
+    /* line 52, components/widgets.css.scss */
+    .recent-comments .comment-box:hover {
+      background-color: #f6f6f6; }
+  /* line 55, components/widgets.css.scss */
+  .recent-comments .view-more {
+    min-height: 24px;
+    border: none;
+    background-color: #fff; }
+    /* line 59, components/widgets.css.scss */
+    .recent-comments .view-more:hover {
+      background-color: #f6f6f6; }
+
+/* Recent activity */
+/* line 69, components/widgets.css.scss */
+.recent-activity {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  /* line 72, components/widgets.css.scss */
+  .recent-activity .event-box {
+    width: 100%;
+    min-height: 72px;
+    background: #fff;
+    padding: 6px;
+    border-bottom: 1px dotted #eeeeee; }
+    /* line 78, components/widgets.css.scss */
+    .recent-activity .event-box:first-child {
+      border-top: 1px dotted #eeeeee; }
+    /* line 80, components/widgets.css.scss */
+    .recent-activity .event-box .user-avatar {
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      margin: 5px 10px;
+      background-size: 100%; }
+      /* line 89, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user1 {
+        background-image: url('../images/users/user1.png'); }
+      /* line 90, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user2 {
+        background-image: url('../images/users/user2.png'); }
+      /* line 91, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user3 {
+        background-image: url('../images/users/user3.png'); }
+      /* line 92, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user4 {
+        background-image: url('../images/users/user4.png'); }
+      /* line 93, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user5 {
+        background-image: url('../images/users/user5.png'); }
+      /* line 94, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user6 {
+        background-image: url('../images/users/user6.png'); }
+      /* line 95, components/widgets.css.scss */
+      .recent-activity .event-box .user-avatar.user7 {
+        background-image: url('../images/users/user7.png'); }
+    /* line 98, components/widgets.css.scss */
+    .recent-activity .event-box .event {
+      margin-left: 65px;
+      margin-top: 5px; }
+      /* line 102, components/widgets.css.scss */
+      .recent-activity .event-box .event a.username {
+        color: #67a0be;
+        font-weight: 600; }
+      /* line 107, components/widgets.css.scss */
+      .recent-activity .event-box .event .action {
+        color: #333;
+        margin: 2px 10px; }
+      /* line 112, components/widgets.css.scss */
+      .recent-activity .event-box .event .time {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: .9em;
+        font-weight: 600;
+        line-height: 14px;
+        color: rgba(0, 0, 0, 0.4); }
+        /* line 119, components/widgets.css.scss */
+        .recent-activity .event-box .event .time i {
+          font-size: 14px; }
+    /* line 123, components/widgets.css.scss */
+    .recent-activity .event-box:hover {
+      background-color: #f3f3f3; }
+  /* line 126, components/widgets.css.scss */
+  .recent-activity .view-more {
+    min-height: 24px;
+    border: none;
+    background-color: #fff; }
+    /* line 130, components/widgets.css.scss */
+    .recent-activity .view-more:hover {
+      background-color: #f3f3f3; }
+
+/* todos */
+/* line 139, components/widgets.css.scss */
+ul.task-list {
+  width: 100%; }
+  /* line 142, components/widgets.css.scss */
+  ul.task-list > li.task-box.completed {
+    background-color: #e7f4f9; }
+    /* line 144, components/widgets.css.scss */
+    ul.task-list > li.task-box.completed .task {
+      text-decoration: line-through; }
+  /* line 147, components/widgets.css.scss */
+  ul.task-list > li.task-box {
+    height: 32px;
+    min-height: 20px;
+    padding: 5px;
+    border-bottom: 1px dotted #eeeeee;
+    color: #777;
+    font-weight: 600; }
+    /* line 152, components/widgets.css.scss */
+    ul.task-list > li.task-box:first-child {
+      border-top: 1px dotted #eeeeee; }
+    /* line 156, components/widgets.css.scss */
+    ul.task-list > li.task-box .check {
+      float: left;
+      font-size: 1.5em;
+      margin-left: 10px;
+      margin-right: 10px; }
+    /* line 163, components/widgets.css.scss */
+    ul.task-list > li.task-box .task {
+      float: left;
+      margin-right: 20px; }
+    /* line 168, components/widgets.css.scss */
+    ul.task-list > li.task-box .priority {
+      float: right;
+      margin-right: 10px; }
+  /* line 174, components/widgets.css.scss */
+  ul.task-list > li.view-all {
+    min-height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #fff; }
+    /* line 179, components/widgets.css.scss */
+    ul.task-list > li.view-all:hover {
+      background-color: #f3f3f3; }
+
+/* Stat-box */
+/* line 184, components/widgets.css.scss */
+.stat-box {
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+  margin: 4px auto;
+  display: inline-block;
+  background-color: #eeeeee;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  /* line 197, components/widgets.css.scss */
+  .stat-box i {
+    padding: 0;
+    font-size: 2em;
+    vertical-align: top;
+    text-align: center; }
+  /* line 204, components/widgets.css.scss */
+  .stat-box .icon-large:before {
+    margin-top: 15px; }
+  /* line 208, components/widgets.css.scss */
+  .stat-box .count {
+    font-size: 2em;
+    padding-left: 5px;
+    font-weight: 600;
+    line-height: 2.5em; }
+  /* line 215, components/widgets.css.scss */
+  .stat-box .stat-text {
+    display: block;
+    font-size: 1.2em;
+    margin-top: -5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600; }
+  /* line 224, components/widgets.css.scss */
+  .stat-box.light-blue {
+    background: #aad7ea;
+    border: 1px solid #96cde5; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.light-blue:hover {
+      background: #9ed1e7; }
+  /* line 227, components/widgets.css.scss */
+  .stat-box.medium-blue {
+    background: #67a0be;
+    border: 1px solid #5595b6; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.medium-blue:hover {
+      background: #5c99b9; }
+  /* line 230, components/widgets.css.scss */
+  .stat-box.text-blue {
+    background: #33566a;
+    border: 1px solid #2b4859; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.text-blue:hover {
+      background: #2e4e60; }
+  /* line 233, components/widgets.css.scss */
+  .stat-box.border-blue {
+    background: #7998aa;
+    border: 1px solid #698ca0; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.border-blue:hover {
+      background: #7091a4; }
+  /* line 236, components/widgets.css.scss */
+  .stat-box.dark-blue {
+    background: #50769b;
+    border: 1px solid #47698a; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.dark-blue:hover {
+      background: #4b6e91; }
+  /* line 239, components/widgets.css.scss */
+  .stat-box.dark-plum {
+    background: #6c5e6d;
+    border: 1px solid #5e525f; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.dark-plum:hover {
+      background: #645765; }
+  /* line 243, components/widgets.css.scss */
+  .stat-box.yellow {
+    background: #f0c22e;
+    border: 1px solid #eebb16; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.yellow:hover {
+      background: #efbe20; }
+  /* line 246, components/widgets.css.scss */
+  .stat-box.orange {
+    background: #ff8330;
+    border: 1px solid #ff7417; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.orange:hover {
+      background: #ff7a21; }
+  /* line 249, components/widgets.css.scss */
+  .stat-box.red {
+    background: #db3535;
+    border: 1px solid #d12525; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.red:hover {
+      background: #d92828; }
+  /* line 252, components/widgets.css.scss */
+  .stat-box.plum {
+    background: #ca6eff;
+    border: 1px solid #c155ff; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.plum:hover {
+      background: #c45fff; }
+  /* line 255, components/widgets.css.scss */
+  .stat-box.blue {
+    background: #2191ed;
+    border: 1px solid #1284e2; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.blue:hover {
+      background: #138aec; }
+  /* line 258, components/widgets.css.scss */
+  .stat-box.turquoise {
+    background: #39c5aa;
+    border: 1px solid #33b199; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.turquoise:hover {
+      background: #36b9a0; }
+  /* line 261, components/widgets.css.scss */
+  .stat-box.green {
+    background: #63a822;
+    border: 1px solid #57931e; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.green:hover {
+      background: #5c9b1f; }
+  /* line 264, components/widgets.css.scss */
+  .stat-box.inverse {
+    background: #444444;
+    border: 1px solid #373737; }
+    /* line 79, general/_mixin-helpers.css.scss */
+    .stat-box.inverse:hover {
+      background: #3c3c3c; }
+  /* line 268, components/widgets.css.scss */
+  .stat-box.text-inverse {
+    color: #555;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }

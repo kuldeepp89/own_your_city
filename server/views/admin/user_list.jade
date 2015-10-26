@@ -1,0 +1,55 @@
+extend ../partials/init.part.jade
+
+block bodyBlock
+  
+  include navigation.part.jade
+  include ../dashboard/topbar.part.jade
+  block mainBlock
+    section#main
+      .container-fluid
+        .row-fluid
+          .span12
+          .span12
+            .pageHeadingTitle
+              .box-header
+                i.icon-picture
+                | User List
+          .row-fluid
+            .span12
+              ul.recent-comments
+                a(href = '' style = 'color: gray')
+                  for user in users
+                    li.comment-box(style = 'width: 49%;float: left; margin-left: 10px')
+                      .row-fluid
+                        .span3
+                          img.avatar(src = '#{user.profile.picture}')
+                        .span9
+                          .row-fluid
+                            .span6
+                              strong Name: #{user.profile.name}
+                            .span6
+                              strong City: #{user.profile.location}
+                          .row-fluid
+                            if(user.local.email === undefined)
+                              .span12 
+                                strong Email ID: #{user.linkedin.email}
+                            else 
+                              .span12
+                                strong Email ID: #{user.local.email}
+
+                          .row-fluid
+                            .span6
+                              strong Total Investment: $#{sidebar[0]}
+                            .span6
+                              if !user.isDisable
+                                a(href='/disableUser/#{user._id}' data-toggle = 'modal').btn.green
+                                  | Disable
+                              else
+                                a(href='/enableUser/#{user._id}' data-toggle = 'modal').btn.green
+                                  | Enable
+
+    script(src='/public/javascripts/image-uploader.js', type='text/javascript')
+
+
+
+  

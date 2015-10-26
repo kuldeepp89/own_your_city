@@ -1,0 +1,43 @@
+nav#primary.main-nav.collapsible-nav
+  // Brand
+  a#sidebar-brand(href='../pages/dashboard.html')
+    | Whitemin
+  button.btn.btn-navbar.btn-inverse(type='button', data-toggle='collapse', data-target='.nav-collapse')
+    i.icon-reorder
+  ul.nav-collapse.collapse
+    // Profile
+    li.profile
+      a.accordion-toggle(href='#profile-opts', data-toggle='collapse')
+        img.avatar.user3
+        span#profile-text.text
+          | Jane Doe
+          b.caret
+      ul#profile-opts.collapse.secondary
+        li
+          a(href='#')
+            | Settings
+        li
+          a(href='#')
+            | Change password
+        li
+          a(href='/auth/logout')
+            | Logout
+    // Dashboard
+    li
+      a(href='/dashboard')
+        span.icon
+          i.icon-dashboard
+        span.text
+          | Dashboard
+    // Components
+    li
+      a.accordion-toggle(href='#components-list', data-toggle='collapse')
+        span.icon
+          i.icon-microformats
+        span.text
+          | Components
+          b.caret
+      ul#components-list.collapse.secondary
+        li
+          a(href='pages/components/buttons.html')
+            | Buttons

@@ -1,0 +1,88 @@
+@imports "compass";
+/* big labels */
+/* line 5, components/big-labels.css.scss */
+.big-label {
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+  background-color: #aaaaaa;
+  border: 1px solid #9d9d9d;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center; }
+  /* line 16, components/big-labels.css.scss */
+  .big-label i {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    font-size: 1.5em;
+    color: #333;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+  /* line 25, components/big-labels.css.scss */
+  .big-label.light-blue {
+    background: #aad7ea;
+    border: 1px solid #96cde5; }
+  /* line 26, components/big-labels.css.scss */
+  .big-label.medium-blue {
+    background: #67a0be;
+    border: 1px solid #5595b6; }
+  /* line 27, components/big-labels.css.scss */
+  .big-label.text-blue {
+    background: #33566a;
+    border: 1px solid #2b4859; }
+  /* line 28, components/big-labels.css.scss */
+  .big-label.dark-blue {
+    background: #50769b;
+    border: 1px solid #47698a; }
+  /* line 29, components/big-labels.css.scss */
+  .big-label.dark-plum {
+    background: #6c5e6d;
+    border: 1px solid #5e525f; }
+  /* line 31, components/big-labels.css.scss */
+  .big-label.yellow {
+    background: #f0c22e;
+    border: 1px solid #eebb16; }
+  /* line 32, components/big-labels.css.scss */
+  .big-label.orange {
+    background: #ff8330;
+    border: 1px solid #ff7417; }
+  /* line 33, components/big-labels.css.scss */
+  .big-label.red {
+    background: #db3535;
+    border: 1px solid #d12525; }
+  /* line 34, components/big-labels.css.scss */
+  .big-label.plum {
+    background: #ca6eff;
+    border: 1px solid #c155ff; }
+  /* line 35, components/big-labels.css.scss */
+  .big-label.blue {
+    background: #2191ed;
+    border: 1px solid #1284e2; }
+  /* line 36, components/big-labels.css.scss */
+  .big-label.turquoise {
+    background: #39c5aa;
+    border: 1px solid #33b199; }
+  /* line 37, components/big-labels.css.scss */
+  .big-label.green {
+    background: #63a822;
+    border: 1px solid #57931e; }
+  /* line 38, components/big-labels.css.scss */
+  .big-label.inverse {
+    background: #444444;
+    border: 1px solid #373737; }
+  /* line 41, components/big-labels.css.scss */
+  .big-label.text-inverse i {
+    color: #eee;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+
+/* line 48, components/big-labels.css.scss */
+.big-label.round {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px; }

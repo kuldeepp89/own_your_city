@@ -1,0 +1,32 @@
+.top-bar
+  a#topbar-brand.brand(href='../dashboard.html')
+    | Whitemin
+  ul.top-notifications
+    li.dropdown
+      a.dropdown-toggle(data-toggle='dropdown', href='#')
+        | Messages
+        span.badge.dark-blue 3
+      ul#messages.dropdown-menu.top-bar-list
+        li
+          a New message
+        li
+          a
+            | Inbox
+            span.count &lpar;8&rpar;
+        li
+          a Sent
+        li
+          a Drafts
+    li.dropdown
+      a.dropdown-toggle(data-toggle='dropdown', href='#')
+        | Orders
+        span.badge.dark-plum 45
+      ul#orders.dropdown-menu.top-bar-list
+        li
+          a
+            | New orders
+            span.count &lpar;6&rpar;
+        li
+          a Refunds
+        li
+          a History

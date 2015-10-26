@@ -1,0 +1,7 @@
+@media (min-width: 980px) {
+  /* line 6, responsive.css.scss */
+  .collapsible-nav .btn-navbar {
+    display: none; }
+  /* line 7, responsive.css.scss */
+  .collapsible-nav a#sidebar-brand {
+    display: none; } }

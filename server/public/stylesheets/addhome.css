@@ -1,0 +1,7 @@
+.hide-rent, .hide-condo{
+  display: none;
+}
+
+.show-rent{
+  display: inline-block;
+}

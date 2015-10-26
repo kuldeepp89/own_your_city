@@ -1,0 +1,264 @@
+/* box */
+/* line 5, ui/boxes.css.scss */
+.box {
+  height: 100%;
+  background: transparent;
+  margin: 10px auto 5px auto;
+  padding: 0;
+  line-height: 20px; }
+  /* line 12, ui/boxes.css.scss */
+  .box .heading {
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #eeeeee; }
+    /* line 13, ui/boxes.css.scss */
+    .box .heading.h1 {
+      font-size: 1.5em; }
+    /* line 14, ui/boxes.css.scss */
+    .box .heading.h2 {
+      font-size: 1.2em; }
+    /* line 15, ui/boxes.css.scss */
+    .box .heading.h3 {
+      font-size: 1em; }
+  /* line 25, ui/boxes.css.scss */
+  .box .note {
+    font-size: 10px;
+    line-height: 20px;
+    color: #999;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+    /* line 30, ui/boxes.css.scss */
+    .box .note i {
+      font-size: 14px;
+      vertical-align: middle; }
+  /* line 36, ui/boxes.css.scss */
+  .box .box-header {
+    height: 45px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(51, 86, 106, 0.5);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+    /* line 50, ui/boxes.css.scss */
+    .box .box-header .dropdown-menu li > a {
+      text-shadow: none; }
+  /* line 53, ui/boxes.css.scss */
+  .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
+    color: rgba(0, 0, 0, 0.7); }
+  /* line 55, ui/boxes.css.scss */
+  .box .section-title {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(51, 86, 106, 0.15);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+  /* line 67, ui/boxes.css.scss */
+  .box.white {
+    background: white;
+    border: 1px solid #f2f2f2; }
+  /* line 68, ui/boxes.css.scss */
+  .box.light-blue {
+    background: #aad7ea;
+    border: 1px solid #96cde5; }
+  /* line 69, ui/boxes.css.scss */
+  .box.medium-blue {
+    background: #67a0be;
+    border: 1px solid #5595b6; }
+  /* line 70, ui/boxes.css.scss */
+  .box.text-blue {
+    background: #33566a;
+    border: 1px solid #2b4859; }
+  /* line 71, ui/boxes.css.scss */
+  .box.border-blue {
+    background: #7998aa;
+    border: 1px solid #698ca0; }
+  /* line 72, ui/boxes.css.scss */
+  .box.dark-blue {
+    background: #50769b;
+    border: 1px solid #47698a; }
+  /* line 73, ui/boxes.css.scss */
+  .box.dark-plum {
+    background: #6c5e6d;
+    border: 1px solid #5e525f; }
+  /* line 75, ui/boxes.css.scss */
+  .box.light-gray {
+    background: #f6f6f6;
+    border: 1px solid #e9e9e9; }
+  /* line 76, ui/boxes.css.scss */
+  .box.medium-light-gray {
+    background: #cccccc;
+    border: 1px solid #bfbfbf; }
+  /* line 77, ui/boxes.css.scss */
+  .box.medium-gray {
+    background: #aaaaaa;
+    border: 1px solid #9d9d9d; }
+  /* line 78, ui/boxes.css.scss */
+  .box.medium-dark-gray {
+    background: #999999;
+    border: 1px solid #8c8c8c; }
+  /* line 79, ui/boxes.css.scss */
+  .box.dark-gray {
+    background: #777777;
+    border: 1px solid #6a6a6a; }
+  /* line 81, ui/boxes.css.scss */
+  .box.yellow {
+    background: #f0c22e;
+    border: 1px solid #eebb16; }
+  /* line 82, ui/boxes.css.scss */
+  .box.orange {
+    background: #ff8330;
+    border: 1px solid #ff7417; }
+  /* line 83, ui/boxes.css.scss */
+  .box.red {
+    background: #db3535;
+    border: 1px solid #d12525; }
+  /* line 84, ui/boxes.css.scss */
+  .box.plum {
+    background: #ca6eff;
+    border: 1px solid #c155ff; }
+  /* line 85, ui/boxes.css.scss */
+  .box.blue {
+    background: #2191ed;
+    border: 1px solid #1284e2; }
+  /* line 86, ui/boxes.css.scss */
+  .box.turquoise {
+    background: #39c5aa;
+    border: 1px solid #33b199; }
+  /* line 87, ui/boxes.css.scss */
+  .box.green {
+    background: #63a822;
+    border: 1px solid #57931e; }
+  /* line 88, ui/boxes.css.scss */
+  .box.inverse {
+    background: #444444;
+    border: 1px solid #373737; }
+
+/* Bordered box - most frequently used */
+/* line 92, ui/boxes.css.scss */
+.box.bordered {
+  background-color: #fff;
+  margin: 10px auto 5px auto;
+  padding: 0;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2); }
+  /* line 101, ui/boxes.css.scss */
+  .box.bordered .box-header .pull-right {
+    line-height: 22px;
+    text-transform: none; }
+    /* line 105, ui/boxes.css.scss */
+    .box.bordered .box-header .pull-right .btn-group {
+      font-size: 1em; }
+    /* line 106, ui/boxes.css.scss */
+    .box.bordered .box-header .pull-right .btn-group.open .dropdown-toggle {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+    /* line 107, ui/boxes.css.scss */
+    .box.bordered .box-header .pull-right .btn-group > .btn, .box.bordered .box-header .pull-right .btn-group > .dropdown-menu {
+      margin-left: -150px;
+      margin-top: -2px; }
+      /* line 110, ui/boxes.css.scss */
+      .box.bordered .box-header .pull-right .btn-group > .btn i, .box.bordered .box-header .pull-right .btn-group > .dropdown-menu i {
+        text-shadow: none; }
+    /* line 113, ui/boxes.css.scss */
+    .box.bordered .box-header .pull-right i {
+      color: rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.3); }
+      /* line 116, ui/boxes.css.scss */
+      .box.bordered .box-header .pull-right i:hover, .box.bordered .box-header .pull-right i:active {
+        color: rgba(0, 0, 0, 0.4); }
+
+/* Dark box */
+/* line 123, ui/boxes.css.scss */
+.box.bordered.dark {
+  background-color: #333;
+  border: 1px solid #262626;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
+  /* line 127, ui/boxes.css.scss */
+  .box.bordered.dark p, .box.bordered.dark h1, .box.bordered.dark h2, .box.bordered.dark h3, .box.bordered.dark h4, .box.bordered.dark h5, .box.bordered.dark ul li, .box.bordered.dark ol, .box.bordered.dark li {
+    color: #fff; }
+  /* line 129, ui/boxes.css.scss */
+  .box.bordered.dark .box-header {
+    background: transparent;
+    color: #acc7d7;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+
+/* Transparent box */
+/* line 137, ui/boxes.css.scss */
+.box.transparent {
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset, rgba(255, 255, 255, 0.4) 0 1px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px; }
+  /* line 143, ui/boxes.css.scss */
+  .box.transparent .box-header {
+    background: transparent;
+    border-bottom: none;
+    color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 700; }
+    /* line 153, ui/boxes.css.scss */
+    .box.transparent .box-header i {
+      margin-right: 5px;
+      font-size: 1.2em;
+      line-height: 1.2em; }
+    /* line 159, ui/boxes.css.scss */
+    .box.transparent .box-header .pull-right {
+      margin-right: 10px; }
+      /* line 161, ui/boxes.css.scss */
+      .box.transparent .box-header .pull-right i {
+        color: rgba(0, 0, 0, 0.4);
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+        font-size: 1.2em;
+        line-height: 1.2em; }
+        /* line 166, ui/boxes.css.scss */
+        .box.transparent .box-header .pull-right i:hover, .box.transparent .box-header .pull-right i:active {
+          color: rgba(0, 0, 0, 0.6); }
+
+/* Box inside another box - no text shadow and such */
+/* line 173, ui/boxes.css.scss */
+.box.inner {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 10px;
+  margin: 10px; }
+
+/* line 180, ui/boxes.css.scss */
+.box.inner.dark {
+  background: #333;
+  border: 1px solid #262626; }

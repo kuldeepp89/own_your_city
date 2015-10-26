@@ -1,0 +1,9 @@
+extends ../partials/init.part
+
+block bodyBlock
+	include ./navigation.part.jade
+	include ../dashboard/topbar.part.jade
+	block mainBlock
+		include ./main.part.jade
+	include ../dashboard/modal.part.jade
+	script(src='/public/javascripts/image-uploader.js', type='text/javascript')

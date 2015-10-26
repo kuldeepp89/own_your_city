@@ -1,0 +1,73 @@
+section#main
+  // breadcrumbs - Start
+
+  // Container - Start
+  .container-fluid
+    .row-fluid
+      .span12
+        .padded
+        .row-fluid
+          .span12
+            if messages.errors
+              .alert.alert-danger.animated.fadeIn
+                for error in messages.errors
+                  div= error.msg
+            if messages.info
+              .alert.alert-info.animated.fadeIn
+                for info in messages.info
+                  div= info.msg
+            if messages.success
+              .alert.alert-success.animated.fadeIn
+                for success in messages.success
+                  div= success.msg
+            .alert-success
+        // Box - Start
+        .box.bordered
+          // Box - Header - Start
+          .box-header
+            i.icon-th-list
+            | Profile
+          // Box - Header - End
+          // Box - Content - Start
+          .row-fluid
+            form.full-width(method='post', action='/profile/edit',enctype = 'multipart/form-data')
+              input(type='hidden', name='_csrf', value='#{csrfToken}')
+              .row-fluid
+                .span6
+                  .padded
+                    .section-title
+                     | Basic Info
+                    .span12
+                      img#picture(src = '#{user.profile.picture}')
+              .row-fluid
+                .span12
+                  .span5.padded 
+                    span.btn
+                      input(type='file', name='pic', onchange = 'readPath(this)')
+                    .vpadded
+                      .input.full-width
+                        label Name
+                        input(type='text', name='name', value='#{user.profile.name}')
+                      .full-width
+                        label Gender
+                        select.chzn-select(name='gender', data-placeholder='Choose a gender...')
+                          if user.profile.gender==='Male'
+                            option(selected='selected') Male
+                            option Female
+                          else if user.profile.gender==='Female'
+                            option Male
+                            option(selected='selected') Female
+                          else
+                            option Male
+                            option Female
+                      .input.full-width
+                        label City
+                        input(type='text', name='location' value='#{user.profile.location}')
+                      .input.full-width
+                        label Age
+                        input(type='text', name='age' value='#{user.profile.age}')
+                      .full-width.offset3
+                       button.btn.btn-large.medium-blue.login-btn(type='submit') Update Profile
+          // Box - Content - End
+        // Box - End
+  // Container - End

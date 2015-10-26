@@ -1,0 +1,60 @@
+section#main
+  .container-fluid
+    .row-fluid
+      .span12
+        .pageHeadingTitle
+          .box-header
+            i.icon-picture
+            | Dashboard
+      .row-fluid
+        .span6
+          .box.bordered
+            .padded
+              .row-fluid
+                .span12
+                  .section-title
+                    | Deals In Progress
+              .row-fluid
+                .span12.offset1
+                  .span4
+                    h6(style = 'color: green')
+                      | Bids in Progress: #{bidHouses[0].length}
+                  .span3
+                    h6(style = 'color: red')
+                      | Bids Over :  #{bidHouses[1].length}
+                  .span4
+                    h6
+                      | Bids Cancelled:  #{bidHouses[2].length}
+                .span12
+                  .scroll(style='height:450px; overflow-x:hidden;overflow-y:scroll')
+                    ul.recent-comments
+                      -var j = 0
+                      - for(i in bidHouses[0])
+                        include ./main.part.snippet.jade
+                    ul.recent-comments
+                      -var j = 1
+                      - for(i in bidHouses[1])                      
+                        include ./main.part.snippet.jade
+                    ul.recent-comments
+                      -var j = 2
+                      - for(i in bidHouses[2])
+                        include ./main.part.snippet.jade    
+        .span6
+          .box.bordered
+            .padded
+              .row-fluid
+                .span12
+                  .section-title
+                    | Property You Own
+              .row-fluid
+                .span12
+                  .scroll(style='height:490px; overflow-x:hidden;overflow-y:scroll; color: gray')
+                    ul.recent-comments
+                      -var j = 4
+                      - for(i in bidHouses[4])
+                        include ./main.part.snippet.jade
+        .row-fluid
+          .span6.offset1
+        .row-fluid
+          .span6.offset1
+        

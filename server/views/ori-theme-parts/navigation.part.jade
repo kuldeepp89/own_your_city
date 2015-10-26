@@ -1,0 +1,109 @@
+nav#primary.main-nav.collapsible-nav
+  // Brand
+  a#sidebar-brand(href='../pages/dashboard.html')
+    | Whitemin
+  button.btn.btn-navbar.btn-inverse(type='button', data-toggle='collapse', data-target='.nav-collapse')
+    i.icon-reorder
+  ul.nav-collapse.collapse
+    // Profile
+    li.profile
+      a.accordion-toggle(href='#profile-opts', data-toggle='collapse')
+        img.avatar.user3
+        span#profile-text.text
+          | Jane Doe
+          b.caret
+      ul#profile-opts.collapse.secondary
+        li
+          a(href='#')
+            | Settings
+        li
+          a(href='#')
+            | Change password
+        li
+          a(href='#')
+            | Logout
+    // Dashboard
+    li
+      a(href='pages/dashboard.html')
+        span.icon
+          i.icon-dashboard
+        span.text
+          | Dashboard
+    // Components
+    li
+      a.accordion-toggle(href='#components-list', data-toggle='collapse')
+        span.icon
+          i.icon-microformats
+        span.text
+          | Components
+          b.caret
+      ul#components-list.collapse.secondary
+        li
+          a(href='pages/components/buttons.html')
+            | Buttons
+        li
+          a(href='pages/components/forms.html')
+            | Forms
+        li
+          a(href='pages/components/elements.html')
+            | Elements
+        li
+          a(href='pages/components/widgets.html')
+            | Widgets
+        li
+          a(href='pages/components/charts.html')
+            | Charts
+        li
+          a(href='pages/components/tables.html')
+            | Tables
+        li
+          a(href='pages/components/grid.html')
+            | Grid
+    // Sample pages
+    li
+      a.accordion-toggle(href='#sample-pages', data-toggle='collapse')
+        span.icon
+          i.icon-pushpin
+        span.text
+          | Pages
+          b.caret
+      ul#sample-pages.collapse.secondary
+        li
+          a(href='pages/samples/gallery.html')
+            | Gallery
+        li
+          a(href='pages/samples/faq.html')
+            | FAQ
+        li
+          a(href='pages/samples/pricing_plans.html')
+            | Pricing Plans
+        li
+          a(href='pages/samples/login.html')
+            | Login
+        li
+          a(href='pages/samples/register.html')
+            | Register
+        li
+          a(href='pages/samples/reports.html')
+            | Reports
+        li
+          a(href='pages/samples/error.html')
+            | Error 404
+    // Extras dropdown
+    li
+      a.accordion-toggle(href='#extras', data-toggle='collapse')
+        span.icon
+          i.icon-gift
+        span.text
+          | Extras
+          b.caret
+      ul#extras.collapse.secondary
+        li
+          a(href='pages/extras/fullcalendar.html')
+            | Fullcalendar
+        li
+          a(href='pages/extras/icons.html')
+            | Icons
+        li
+          a(href='pages/extras/world-map.html')
+            | World map

@@ -1,0 +1,212 @@
+section#main
+  .container-fluid    
+    .row-fluid
+      .row-fluid
+        .span12(style= 'margin-top: 10px;')
+        if messages.errors
+          .alert.alert-danger.animated.fadeIn
+            for error in messages.errors
+              div= error        
+        if messages.success
+          .alert.alert-success.animated.fadeIn
+            for success in messages.success
+              div= success
+      .span12
+        .pageHeadingTitle
+          .box-header
+            i.icon-picture
+            | #{title}
+        .row-fluid
+          .span6.offset1
+            .padded.center
+              #gallery.gallery(data-target='#modal-gallery', data-toggle='modal-gallery')
+                for image in house.images.otherImage
+                  a(href='#{image}', rel='gallery')
+                    img.thumb(src='#{image}', style = 'height: 100px;')
+        .row-fluid
+                   
+          if(isAdmin && (remainTime > 0) && (pFunded !=100))
+            a(href='#ownersDetail' data-toggle = 'modal')
+              .span3.offset1.btn.green(style='text-align: center;font-size: 16px; padding-top: 3px; background-color: green; color: white;')
+                | Owners Details
+            a(href="#editModal" data-toggle="modal")
+              .span3.getting-started(style='text-align: center;font-size: 16px;margin-left: 30px; padding-top: 3px; background-color: lightgreen; color: green; margin-top: 5px;')
+          else if(remainTime >= 0 && (pFunded !=100))
+              a(href="#isAgree"   data-toggle="modal")
+                .span3.offset1.btn.green(style='text-align: center;font-size: 16px; padding-top: 3px; background-color: green; color: white;')
+                  | Buy Share
+              .span3.getting-started(style='text-align: center;font-size: 16px;padding-top: 3px; background-color: lightgreen; color: green; margin-top: 5px;')
+          else if(isAdmin)
+            .span2.btn.red.offset1
+              | Bidding Off
+            a(href='#ownersDetail' data-toggle = 'modal').span2.btn.red(style='text-align: center;font-size: 16px; color: white;')
+                | Owners Details
+            if !house.isDisable
+              a(href='/disable/#{house._id}' data-toggle = 'modal').span2.btn.red
+                | Disable
+            else
+              a(href='/enable/#{house._id}' data-toggle = 'modal').span2.btn.red
+                | Enable
+          else
+              .span4.btn.red.offset2 
+                | Bidding Off
+
+          .span1
+        .row-fluid
+          .span6.offset1
+            .box.bordered
+              .padded
+                .row-fluid
+                  .span12
+                    .section-title
+                      | #{title}
+                      span.label #{pFunded}% funded
+                .row-fluid
+                  .span6
+                    strong Total Number of Shares: 
+                    | #{house.numberOfShare}
+                  .span6
+                    strong Cost per share: 
+                    | $#{house.costOfShare}
+                .row-fluid
+                  .span6
+                    strong City: 
+                    | #{house.city}
+                  .span6
+                    strong Neighborhood: 
+                    | #{house.neighbourHood}
+                .row-fluid
+                  .span6
+                    strong Type of House: 
+                    | #{house.typeOfHouse.title}
+                  .span6
+                    strong Year Built: 
+                    | #{house.age}
+                .row-fluid
+                  .span8
+                .row-fluid
+                  .span6
+                    strong Short Description: 
+                    | #{house.description}
+                  .span6
+                    strong Address: 
+                    | #{house.houseNumber} #{house.streetNumber}
+                  input#fullAddress(type = 'hidden', value = '#{house.houseNumber} #{house.streetNumber} #{house.pinCode} #{house.city} USA')
+                .row-fluid
+                  .span6
+                    strong Is the property on rent: 
+                    if house.rent.isRent
+                      | Yes
+                    else
+                      | No
+                  if house.rent.isRent
+                    .span6
+                      strong Monthly Rent: 
+                      | $#{house.rent.monthlyRent}
+                  .span6
+                    |Pincode: #{house.pinCode}                    
+                .row-fluid
+                  if house.typeOfHouse.isCondo
+                    .span6
+                      strong Monthly Condo Fees: 
+                      | $#{house.typeOfHouse.condoDetails.monthlyFee}
+                    .span6
+                .row-fluid
+                    #googlemap(style='height:350px')
+        .row-fluid
+          .span6.offset1
+            .box.bordered
+              .padded
+                .row-fluid
+                  .span12
+                    .section-title
+                      | Property Documents
+                .row-fluid
+                  .span6
+                    a(target='_blank', href='#{house.ownershipDocument}')
+                      p.icon-download   Ownership Document
+                  .span6
+                    a(target='_blank', href='#{house.floorPlanDocument}')
+                      p.icon-download   Floor Plan Document
+                .row-fluid
+                  .span6
+                    a(target='_blank', href='#{house.billDocument}')
+                      p.icon-download   Taxes and Bills Document
+                  .span6
+                    a(target='_blank', href='#{house.repairAndMaintenanceDocument}')
+                      p.icon-download   Repair And Maintainane Document
+                .row-fluid
+                  .span6
+                    a(target= '_blank', href = '#{house.renovationDocument}')
+                      p.icon-download   Renovation Document
+                  .span6
+                    if house.typeOfHouse.isCondo
+                      a(target= '_blank', href = '#{house.typeOfHouse.condoDetails.condoDocument}')
+                        p.icon-download   Condo Document
+                .row-fluid
+                  if house.rent.isRent
+                    .span6
+                      a(target= '_blank', href = '#{house.rent.rentReceivedDocument}')
+                        p.icon-download   Rent Received Document
+                    .span6
+                      a(target= '_blank', href = '#{house.rent.managementDocument}')
+                        p.icon-download   Management Document
+      if  isAdmin
+        include ../admin/admin_house_detail.part.jade
+      else
+        include ../user/user_house_detail.part.jade
+
+script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyCnDEvtsmWYLFiUrugQdAF7fqO7e9wmsS8&sensor=false')
+script(src='/public/javascripts/image-uploader.js', type='text/javascript')
+script.
+  var date = "#{house.biddingEndDate}";  
+  var dateWidTime = date.split('-');
+  var od = new Date(dateWidTime[0]);
+  var delay = od.getFullYear()+'/'+(parseInt(od.getMonth()+ 1))+'/'+(od.getDate());
+  function countDown(){
+    $('.getting-started').countdown(delay+' '+dateWidTime[1])
+      .on('update.countdown', function(event) {
+          var format = '%H:%M';
+          if(event.offset.totalDays > 1) {
+            format = '%-w week%!w %-d day%!d ' ;
+            $(this).html('Bid On: '+ event.offset.totalDays +' days left');
+          }
+          else {                      
+            $(this).html('Bid On: ' +event.strftime(format) + ' hours left');                      
+          }    
+      }).on('finish.countdown', function(event) {
+        $(this).parent()
+          .addClass('disabled')
+          .html('<button class="offset3 btn red">This offer has expired!</strong>');
+    });
+  }
+  countDown();
+  var geocoder;
+  var map;
+  function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var mapOptions = {
+      zoom: 14,
+      center: latlng
+    }
+    map = new google.maps.Map(document.getElementById("googlemap"), mapOptions);
+  }
+
+  function codeAddress(address) {
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert("Geocode was not successful for the following reason: " + status);
+      }
+    });
+  }
+  window.onload = function(){  
+    initialize();
+    codeAddress($('#fullAddress').val());
+  }

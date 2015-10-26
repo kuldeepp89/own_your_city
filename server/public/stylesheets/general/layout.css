@@ -1,0 +1,24 @@
+/* line 4, general/layout.css.scss */
+html {
+  height: 100%;
+  width: 100%; }
+
+/* line 9, general/layout.css.scss */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-image: url('../images/patterns/whitey_light.png');
+  -webkit-font-smoothing: antialiased; }
+
+/* line 17, general/layout.css.scss */
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 23, general/layout.css.scss */
+section#main {
+  overflow: hidden;
+  margin-left: 140px;
+  padding-top: 50px; }

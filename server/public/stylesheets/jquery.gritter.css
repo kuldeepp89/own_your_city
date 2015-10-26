@@ -1,0 +1,163 @@
+/* Gritter notifications */
+/* line 5, jquery.gritter.css.scss */
+#gritter-notice-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 301px;
+  z-index: 9999; }
+
+/* line 12, jquery.gritter.css.scss */
+#gritter-notice-wrapper.top-left {
+  left: 20px;
+  right: auto; }
+
+/* line 16, jquery.gritter.css.scss */
+#gritter-notice-wrapper.bottom-right {
+  top: auto;
+  left: auto;
+  bottom: 20px;
+  right: 20px; }
+
+/* line 22, jquery.gritter.css.scss */
+#gritter-notice-wrapper.bottom-left {
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  left: 20px; }
+
+/* line 29, jquery.gritter.css.scss */
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+  background: #67a0be;
+  color: #fff;
+  background: #50769b;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3YTBiZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUwNzY5YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67a0be), color-stop(100%, #50769b));
+  background-image: -webkit-linear-gradient(top, #67a0be, #50769b);
+  background-image: -moz-linear-gradient(top, #67a0be, #50769b);
+  background-image: -o-linear-gradient(top, #67a0be, #50769b);
+  background-image: linear-gradient(top, #67a0be, #50769b);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 39, jquery.gritter.css.scss */
+.gritter-top {
+  height: 10px; }
+
+/* line 42, jquery.gritter.css.scss */
+.hover .gritter-top {
+  background-position: right -30px; }
+
+/* line 45, jquery.gritter.css.scss */
+.gritter-bottom {
+  height: 8px;
+  margin: 0; }
+
+/* line 49, jquery.gritter.css.scss */
+.hover .gritter-bottom {
+  background-position: bottom right; }
+
+/* line 52, jquery.gritter.css.scss */
+.gritter-item {
+  display: block;
+  color: #eee;
+  padding: 2px 11px 8px 11px;
+  font-size: 11px; }
+
+/* line 58, jquery.gritter.css.scss */
+.hover .gritter-item {
+  background-position: right -40px; }
+
+/* line 61, jquery.gritter.css.scss */
+.gritter-item p {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word; }
+
+/* line 66, jquery.gritter.css.scss */
+.gritter-close {
+  display: none;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  background: url('../images/gritter/gritter.png') no-repeat left top;
+  cursor: pointer;
+  width: 30px;
+  height: 30px; }
+
+/* line 76, jquery.gritter.css.scss */
+.gritter-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 0 7px 0;
+  display: block;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6); }
+
+/* line 83, jquery.gritter.css.scss */
+.gritter-image {
+  width: 48px;
+  height: 48px;
+  float: left;
+  border: 3px solid white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333; }
+
+/* line 92, jquery.gritter.css.scss */
+.gritter-with-image,
+.gritter-without-image {
+  padding: 0; }
+
+/* line 95, jquery.gritter.css.scss */
+.gritter-with-image {
+  width: 220px;
+  float: right; }
+
+/* Light Notifications */
+/* line 101, jquery.gritter.css.scss */
+.gritter-item-wrapper.gritter-light {
+  position: relative;
+  margin: 0 0 10px 0;
+  background: #eeeeee;
+  color: #444;
+  background: #dddddd;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: linear-gradient(top, #eeeeee, #dddddd);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 114, jquery.gritter.css.scss */
+.gritter-light .gritter-item,
+.gritter-light .gritter-bottom,
+.gritter-light .gritter-top,
+.gritter-light .gritter-close {
+  color: #222; }
+
+/* line 118, jquery.gritter.css.scss */
+.gritter-light .gritter-title {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
